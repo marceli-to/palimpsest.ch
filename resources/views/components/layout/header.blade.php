@@ -1,12 +1,12 @@
-<header class="bg-blue-600 px-20 text-white flex justify-between items-center">
+<header class="bg-royal px-16 h-76 fixed top-0 left-0 w-full text-white flex justify-between items-center">
   <nav class="flex flex-col">
     <a href="{{ localized_route('page.about') }}">{{ __('A propos') }}</a>
     <a href="{{ localized_route('page.places') }}">{{ __('Orte') }}</a>
     <a href="{{ localized_route('page.image-gallery') }}">{{ __('Bildgalerie') }}</a>
   </nav>
   <div class="flex flex-col items-center justify-center">
-    <h1 class="text-2xl font-bold">Palimpsest</h1>
-    <p>Audiowalk – Cie Nicole Seiler</p>
+    <h1 class="text-2xl">Palimpsest</h1>
+    <p>Audiowalk — Cie Nicole Seiler</p>
   </div>
   <nav>
     <a 

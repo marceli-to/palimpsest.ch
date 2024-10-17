@@ -14,11 +14,12 @@ export default {
     extend: {
 
       colors: {
-        'ocean': '#0077b6',
+        'royal': '#070ADB',
+        'coral': '#EF6344',
       },
 
       fontFamily: {
-        sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+        'medium': ['AtlasGroteskMedium', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
