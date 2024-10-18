@@ -10,7 +10,7 @@
 
 /* Overflow handling for mobile devices */
 html.has_menu {
-  @apply !overflow-y-hidden;
+  @apply !overflow-y-hidden md:!overflow-y-scroll;
 }
 
 html.has_menu main,
