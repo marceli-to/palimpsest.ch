@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="{{ locale() }}" class="scroll-smooth overflow-y-auto" x-data="{ show_menu: false, is_pages: false }">
+<html 
+  lang="{{ locale() }}" 
+  class="scroll-smooth overflow-y-auto" 
+  x-data="{ show_menu: false, is_pages: {{ Request::routeIs('*.page.place') ? 'true' : 'false' }} }">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
