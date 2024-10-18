@@ -1,13 +1,21 @@
 @props(['href', 'title' => null])
 <li>
   <a 
-    href="{{ localized_route($href) }}"
+    @if ($href === 'page.places')
+      href="javascript:;"
+      x-on:click="is_pages = ! is_pages"
+    @else
+      href="{{ localized_route($href) }}"
+    @endif
     title="{{ __($title) }}"
     {{ $attributes->merge(['class' => 'text-4xl lg:text-5xl']) }}>
     {{ __($title) }}
   </a>
   @if ($href === 'page.places')
-    <ul class="my-16 ml-2 flex flex-col gap-y-8 lg:gap-y-4">
+    <ul 
+      class="my-16 ml-2 flex flex-col gap-y-8 lg:gap-y-4"
+      x-cloak 
+      x-show="is_pages">
       @foreach (config('places') as $slug => $place)
         <li>
           <a 
