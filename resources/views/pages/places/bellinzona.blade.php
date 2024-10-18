@@ -1,4 +1,6 @@
 @extends('app')
 @section('content')
-<h2>Bellinzona</h2>
+<x-misc.place>
+  <h2>Bellinzona</h2>
+</x-misc.place>
 @endsection
