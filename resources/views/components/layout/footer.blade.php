@@ -1,4 +1,4 @@
-<footer class="border-t-2 border-t-white text-white text-sm lg:text-lg leading-[1.125] lg:leading-[1.2] pt-24 pb-16 lg:py-32">
+<footer class="border-tlg:border-t-2 border-t-white text-white text-sm lg:text-lg pt-24 pb-16 lg:py-32">
   <x-layout.inner>
     <address class="not-italic">
       Cie Nicole Seiler<br>Rue du Valentin 34 et demi<br>CH–1004 Lausanne
@@ -6,11 +6,11 @@
     <div class="flex justify-between mt-16">
       <div>
         <a 
-          href="mailto:info@nicole-seiler.ch"
+          href="mailto:info@nicoleseiler.com"
           title="{{ __('E-Mail Nicole Seiler') }}"
           class="block hover:text-coral transition-colors"
           target="_blank">
-          info@nicole-seiler.ch
+          info@nicoleseiler.com
         </a>
         <a 
           href="https://www.nicoleseiler.com" 

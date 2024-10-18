@@ -10,5 +10,4 @@ Route::multilingual('image-gallery', [PageController::class, 'imageGallery'])->n
 Route::multilingual('imprint', [PageController::class, 'imprint'])->name('page.imprint');
 Route::multilingual('privacy-policy', [PageController::class, 'privacy'])->name('page.privacy');
 
-Route::get('/', [PageController::class, 'home'])->name('page.home');
-Route::get('/{locale}', [PageController::class, 'home'])->name('page.home');
+Route::get('/{locale?}', [PageController::class, 'home'])->name('page.home')->where('locale', implode('|', config('locales.supported')));

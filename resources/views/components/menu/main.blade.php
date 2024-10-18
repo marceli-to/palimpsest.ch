@@ -13,7 +13,7 @@
 </a>
 
 <div 
-  class="bg-royal fixed left-0 top-76 h-dvh lg:h-auto w-full"
+  class="bg-royal fixed left-0 top-76 h-dvh lg:h-screen w-full"
   x-cloak 
   x-show="show_menu"
   x-transition:enter="transition ease-out duration-240"
@@ -22,10 +22,13 @@
   x-transition:leave="transition ease-in duration-240"
   x-transition:leave-start="opacity-100"
   x-transition:leave-end="opacity-0">
-  <nav class="flex flex-col px-16">
-    <a href="{{ localized_route('page.about') }}">{{ __('A propos') }}</a>
-    <a href="{{ localized_route('page.places') }}">{{ __('Orte') }}</a>
-    <a href="{{ localized_route('page.image-gallery') }}">{{ __('Bildgalerie') }}</a>
+  <nav class="flex flex-col p-16">
+    <ul class="flex flex-col gap-16">
+      <x-menu.main-item href="page.about" title="A propos" />
+      <x-menu.main-item href="page.places" title="Orte" />
+      <x-menu.main-item href="page.image-gallery" title="Bildgalerie" />
+    </ul> 
   </nav>
+  <x-menu.language class="fixed bottom-16 left-16 lg:hidden" />
 </div>
 
