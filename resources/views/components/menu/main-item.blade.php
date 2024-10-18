@@ -13,7 +13,7 @@
   </a>
   @if ($href === 'page.places')
     <ul 
-      class="my-16 ml-2 flex flex-col gap-y-8 lg:gap-y-4"
+      class="mt-16 ml-2 flex flex-col gap-y-8 lg:gap-y-4"
       x-cloak 
       x-show="is_pages">
       @foreach (config('places') as $slug => $place)
