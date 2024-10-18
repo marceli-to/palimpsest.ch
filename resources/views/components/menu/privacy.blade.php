@@ -1,6 +1,6 @@
 <nav>
   <ul>
-    <li class="text-right">
+    <li class="sm:text-right">
       <a 
         href="{{ localized_route('page.imprint') }}"
         title="{{ __('Impressum') }}"
@@ -8,7 +8,7 @@
         {{ __('Impressum') }}
       </a>
     </li>
-    <li class="text-right">
+    <li class="sm:text-right">
       <a 
         href="{{ localized_route('page.privacy') }}"
         title="{{ __('Datenschutz') }}"

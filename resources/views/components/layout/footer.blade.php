@@ -3,7 +3,7 @@
     <address class="not-italic">
       Cie Nicole Seiler<br>Rue du Valentin 34 et demi<br>CH–1004 Lausanne
     </address>
-    <div class="flex justify-between mt-16">
+    <div class="flex flex-col gap-y-16 sm:flex-row sm:justify-between mt-16">
       <div>
         <a 
           href="mailto:info@nicoleseiler.com"
