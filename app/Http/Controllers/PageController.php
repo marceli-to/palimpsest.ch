@@ -19,6 +19,11 @@ class PageController extends Controller
     return view('pages.places');
   }
 
+  public function place(Request $request, $place)
+  {
+    return view('pages.places.' . $place);
+  }
+
   public function imageGallery(Request $request)
   {
     return view('pages.image-gallery');

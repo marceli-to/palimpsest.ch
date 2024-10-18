@@ -36,6 +36,8 @@ export default {
         '3xl': '2.25rem',    // 36px
         '4xl': '3rem',       // 48px
         '5xl': '6rem',       // 96px
+        // '5xl': '4.5rem',     // 72px
+        // '6xl': '6rem',       // 96px
       },
 
     },
