@@ -18,10 +18,10 @@ export default {
       },
 
       screens: {
-        'phone': {'raw': '(max-width: 480px) and (orientation: portrait)'},
-        'phone-landscape': {'raw': '(max-width: 769px) and (orientation: landscape)'},
-        'tablet': {'raw': '(min-width: 769px) and (max-width: 1024px) and (orientation: portrait)'},
-        'tablet-landscape': {'raw': '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)'},
+        'tall': {'raw': '(max-aspect-ratio: 10/9) and (max-width: 768px)'},
+        'tall-md': {'raw': '(max-aspect-ratio: 10/9) and (min-width: 769px)'},
+        'square': {'raw': '(min-aspect-ratio: 1/1) and (max-aspect-ratio: 16/9)'},
+        'wide': {'raw': '(min-aspect-ratio: 16/10)'},
       },
 
       colors: {

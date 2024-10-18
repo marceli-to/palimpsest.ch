@@ -1,9 +1,23 @@
 @extends('app')
 @section('content')
-  {{-- <div class="phone-landscape:bg-green-500 phone:bg-red-500 tablet:bg-blue-500 tablet-landscape:bg-yellow-500 min-h-200">
-  </div> --}}
-  <img 
-    src="{{ asset('img/palimpsest_home_de-portrait-sm.webp') }}" 
-    alt="Palimpsest" 
-    class="w-full h-[calc(100dvh_-_78px)] object-cover">
+    <img 
+      src="{{ asset('img/palimpsest_home_de-tall.webp') }}" 
+      alt="Palimpsest" 
+      class="w-full h-[calc(100dvh_-_78px)] lg:h-[calc(100dvh_-_114px)] object-cover object-right-top hidden tall:block square:hidden wide:hidden">
+
+    <img 
+      src="{{ asset('img/palimpsest_home_de-tall-md.webp') }}" 
+      alt="Palimpsest" 
+      class="w-full h-[calc(100dvh_-_78px)] lg:h-[calc(100dvh_-_114px)] object-cover object-right-top hidden tall-md:block tall:hidden square:hidden wide:hidden">
+
+    <img 
+      src="{{ asset('img/palimpsest_home_de-square.webp') }}" 
+      alt="Palimpsest" 
+      class="w-full h-[calc(100dvh_-_78px)] lg:h-[calc(100dvh_-_114px)] object-cover object-right-top hidden square:block tall:hidden wide:hidden">
+
+      <img 
+        src="{{ asset('img/palimpsest_home_de-wide.webp') }}" 
+        alt="Palimpsest" 
+        class="w-full h-[calc(100dvh_-_78px)] lg:h-[calc(100dvh_-_114px)] object-cover object-right-top hidden wide:block tall:hidden square:hidden">
+
 @endsection
