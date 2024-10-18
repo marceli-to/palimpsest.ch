@@ -1,4 +1,4 @@
-<footer class="border-tlg:border-t-2 border-t-white text-white text-sm lg:text-lg pt-24 pb-16 lg:py-32">
+<footer class="border-t lg:border-t-2 border-t-red-500 text-white text-sm lg:text-lg pt-24 pb-16 lg:py-32">
   <x-layout.inner>
     <address class="not-italic">
       Cie Nicole Seiler<br>Rue du Valentin 34 et demi<br>CH–1004 Lausanne

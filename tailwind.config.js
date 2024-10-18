@@ -17,6 +17,13 @@ export default {
         'page': '120rem', // 1920px
       },
 
+      screens: {
+        'phone': {'raw': '(max-width: 480px) and (orientation: portrait)'},
+        'phone-landscape': {'raw': '(max-width: 769px) and (orientation: landscape)'},
+        'tablet': {'raw': '(min-width: 769px) and (max-width: 1024px) and (orientation: portrait)'},
+        'tablet-landscape': {'raw': '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)'},
+      },
+
       colors: {
         'royal': '#070ADB',
         'coral': '#EF6344',
