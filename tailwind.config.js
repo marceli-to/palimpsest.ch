@@ -13,6 +13,10 @@ export default {
 
     extend: {
 
+      maxWidth: {
+        'page': '120rem', // 1920px
+      },
+
       colors: {
         'royal': '#070ADB',
         'coral': '#EF6344',
@@ -23,10 +27,15 @@ export default {
       },
 
       fontSize: {
-        'base': '1rem', // 16px
-        'md': '1.125rem', // 18px
-        'lg': '1.5rem', // 24px
-        'xl' : '1.875rem', // 30px
+        'xs': '0.875rem',    // 14px
+        'sm': '1rem',        // 16px
+        'base': '1.125rem',  // 18px
+        'lg': '1.5rem',      // 24px
+        'xl': '1.75rem',     // 28px
+        '2xl': '2rem',       // 32px
+        '3xl': '2.25rem',    // 36px
+        '4xl': '3rem',       // 48px
+        '5xl': '6rem',       // 96px
       },
 
     },

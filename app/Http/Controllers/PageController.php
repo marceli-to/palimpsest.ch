@@ -23,4 +23,14 @@ class PageController extends Controller
   {
     return view('pages.image-gallery');
   }
+
+  public function imprint(Request $request)
+  {
+    return view('pages.imprint');
+  }
+
+  public function privacy(Request $request)
+  {
+    return view('pages.privacy');
+  }
 }
