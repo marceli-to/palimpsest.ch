@@ -29,6 +29,6 @@
       <x-menu.main-item href="page.image-gallery" title="Bildgalerie" />
     </ul> 
   </nav>
-  <x-menu.language class="fixed bottom-16 left-16 lg:hidden" />
+  <x-menu.language class="fixed top-[calc(100dvh_-_32px)] left-16 lg:hidden" />
 </div>
 
