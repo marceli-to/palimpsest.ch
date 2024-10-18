@@ -1,6 +1,6 @@
 <a 
   href="javascript:;" 
-  x-on:click="show_menu = ! show_menu; {{ !Request::routeIs('*.page.place') ? 'is_pages = false' : '' }}" 
+  x-on:click="show_menu = ! show_menu; {{ !Request::routeIs('*.page.place') ? 'is_pages = false' : '' }}; $event.target.closest('html').classList.toggle('has_menu');" 
   title="Menü anzeigen"
   class="absolute left-16 top-17 lg:left-0 lg:top-34 lg:relative flex justify-center w-32 lg:w-46">
   <span x-show="show_menu === false">
