@@ -12,7 +12,7 @@
 </a>
 
 <div 
-  class="bg-royal fixed left-0 top-78 lg:top-114 px-16 lg:px-0 pb-16 lg:pb-0 flex flex-col justify-between h-dvh lg:h-screen w-full max-h-[calc(100dvh_-_78px)] lg:max-h-[calc(100dvh_-_114px)] overflow-y-auto"
+  class="bg-royal fixed z-50 left-0 top-78 lg:top-114 px-16 lg:px-0 pb-16 lg:pb-0 flex flex-col justify-between h-dvh lg:h-screen w-full max-h-[calc(100dvh_-_78px)] lg:max-h-[calc(100dvh_-_114px)] overflow-y-auto"
   x-cloak 
   x-show="show_menu">
   <nav class="w-full py-18 lg:py-48 lg:px-32 max-w-page mx-auto ">
