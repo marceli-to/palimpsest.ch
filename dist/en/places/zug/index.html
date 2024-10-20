@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-en.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="uXBMQrejyEyUHswW7yKGoZFLEl10Ux0yKBt0IOxf">
+<meta name="csrf-token" content="JU73xWKXQEkSRzFiKfJh4VmQchoV7VBw9x9yGDru">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -28,7 +28,7 @@
 <meta name="apple-mobile-web-app-title" content="Palimpsest – Audiowalk – Cie Nicole Seiler" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.NDSYMkow.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.NDSYMkow.css" /><link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/map.Bmd8DMoW.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/map.Bmd8DMoW.css" /><link rel="modulepreload" href="https://palimpsest.ch.marcelito.ch/build/assets/place.CjXhbfuM.js" /><script type="module" src="https://palimpsest.ch.marcelito.ch/build/assets/place.CjXhbfuM.js"></script><noscript>
+<link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.DbOx-NJc.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.DbOx-NJc.css" /><link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/map.Bmd8DMoW.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/map.Bmd8DMoW.css" /><link rel="modulepreload" href="https://palimpsest.ch.marcelito.ch/build/assets/place.CjXhbfuM.js" /><script type="module" src="https://palimpsest.ch.marcelito.ch/build/assets/place.CjXhbfuM.js"></script><noscript>
   <style>
     .simplebar-content-wrapper {
       scrollbar-width: auto;
@@ -72,18 +72,18 @@
   class="bg-royal fixed z-50 left-0 top-78 lg:top-114 pl-16 lg:px-0 w-full"
   x-cloak 
   x-show="show_menu">
-  <div class="pb-16 lg:pb-0 h-dvh lg:h-screen max-h-[calc(100dvh_-_90px)] lg:max-h-[calc(100dvh_-_114px)] overflow-y-auto" data-simplebar>
-    <div class="flex flex-col justify-between h-dvh lg:h-screen">
+  <div class="pb-16 lg:pb-0 h-dvh lg:h-screen max-h-[calc(100dvh_-_90px)] lg:max-h-[calc(100vh_-_114px)] overflow-y-auto" data-simplebar>
+    <div class="flex flex-col justify-between min-h-dvh lg:min-h-[calc(100vh_-_114px)]">
       <nav class="w-full py-18 lg:py-48 lg:px-32 max-w-page mx-auto">
         <ul class="flex flex-col gap-y-16 lg:gap-y-8">
-        <li>
+          <li>
   <a 
           href="https://palimpsest.ch.marcelito.ch/en/about"
         title="About us"
     class="text-4xl lg:text-5xl">
     About us
   </a>
-  </li>        <li>
+  </li>          <li>
   <a 
           href="javascript:;"
       x-on:click="is_pages = ! is_pages"
@@ -192,15 +192,15 @@
           </a>
         </li>
           </ul>
-  </li>        <li>
+  </li>          <li>
   <a 
           href="https://palimpsest.ch.marcelito.ch/en/image-gallery"
         title="Image gallery"
     class="text-4xl lg:text-5xl">
     Image gallery
   </a>
-  </li>      </ul> 
-    </nav>
+  </li>        </ul> 
+      </nav>
       <nav class="lg:hidden">
   <ul class="flex gap-x-24 lg:gap-x-20 [&_a]:text-lg [&_a.is-active]:underline [&_a]:decoration-1 [&_a]:underline-offset-2">
     <li>
@@ -249,21 +249,22 @@
 </nav>
 </div></header>
   <main role="main" class="bg-white flex-1 relative z-10">
-  <div class="max-w-page mx-auto px-16 lg:px-32 !px-0 lg:!px-32">
-  <div class="px-16 lg:px-0">
+  <header class="bg-royal text-white sticky top-0 z-50">
+  <div class="max-w-page mx-auto px-16 lg:px-32 flex items-center justify-between">
+  <h2>Zug</h2>
     <a 
       href="javascript:;" 
       x-on:click="show_menu = true; ; $event.target.closest('html').classList.toggle('has_menu');" 
       class="text-4xl">
       X
-    </a>
-    <h2>Zug</h2>
-  </div>
-  <div class="grid grid-cols-12 gap-24 mt-24">
+      </a>
+</div></header>
+<div class="max-w-page mx-auto px-16 lg:px-32 !px-0 lg:!px-32">
+  <div class="grid grid-cols-12">
     <div class="order-2 lg:order-1 lg:pr-8 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
               <div 
   data-location="theater_casino_zug" 
-  class="relative border-b border-coral"
+  class="relative border-b border-coral scroll-mt-[300px]"
   data-accordion>
   <button 
     type="button" 
@@ -333,7 +334,7 @@
     <div class="order-1 lg:order-2 col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
       <div 
         id="map" 
-        class="w-full min-h-[300px]"
+        class="w-full min-h-[300px] lg:min-h-[500px]"
         data-map-zoom="10"
         data-map-locations='[
                       {
