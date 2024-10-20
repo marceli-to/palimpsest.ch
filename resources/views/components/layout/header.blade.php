@@ -1,4 +1,4 @@
-<header class="bg-royal border-b lg:border-b-2 border-b-white h-78 lg:h-114 sticky top-0 w-full text-white">
+<header class="bg-royal border-b lg:border-b-2 border-b-white h-78 lg:h-114 sticky z-40 top-0 w-full text-white">
   <x-layout.inner class="relative w-full flex justify-between">
     <x-menu.main />
     <x-misc.title />
