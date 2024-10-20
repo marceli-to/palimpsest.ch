@@ -20,7 +20,135 @@ class PlaceSeeder extends Seeder
         'slug' => 'freiburg-im-breisgau', 
         'name' => 'Freiburg im Breisgau', 
         'position' => 1,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Tanzbrunnen',
+            'subtitle' => 'Am Rand des Tanzbrunnens',
+            'audio_file' => 'freiburg-tanzbrunnen.mp3',
+            'latitude' => 47.993281,
+            'longitude' => 7.845636,
+            'facts' => [
+              [
+                'periode' => 'Ab 1745',
+                'text' => 'Auf einem der ehemaligen Bastionshügel der Vauban-Befestigung wird der Park « Neue Promenade » angelegt, später « Alleegarten » oder « Hochallee ».'
+              ],
+              [
+                'periode' => '19. Jahrhundert',
+                'text' => 'Ausbau des Parks und Bau einer Brunnenanlage. Zentrales Element des Brunnens war der aus Steinen aufgeschichtete Fels, über den sich ein künstlicher Wasserfall ins Becken ergoss.'
+              ],
+              [
+                'periode' => '1880',
+                'text' => 'Errichtung einer Figurengruppe von Bertold Knittel, gestiftet von « Verein zur Verschönerung der Stadt Freiburg » : Drei Knaben verkörperten die drei Quellflüsse der Dreisam : Ibenbach, Wagensteigbach und Rotbach.'
+              ],
+              [
+                'periode' => '1944',
+                'text' => 'Zerstörung der Brunnenanlage.'
+              ],
+              [
+                'periode' => 'Nach 1945',
+                'text' => 'Erneuerung des Brunnens in Beton ohne die Figurengruppe.'
+              ],
+              [
+                'periode' => '26. Oktober 2007',
+                'text' => 'Übergabe der Skulptur « Bündel-Stele I » von Roland Phleps. Er hat die Stele aus Edelstahl anlässlich des 550-jährigen Universitätsjubiläums der Stadt Freiburg geschenkt.'
+              ],
+              [
+                'periode' => '2011',
+                'text' => 'Stilllegung des Brunnens wegen technischer Probleme beim Wasserfall. Das trockene Becken wird zum « Tanzbrunnen ».'
+              ],
+              [
+                'periode' => '21. Juli 2015',
+                'text' => 'Eröffnung der neuen Universitätsbibliothek, fast vollkommen neu gebaut durch das Basler Architekturbüro Degelo Architekten. Sie gilt als eine der modernsten und grössten Universitätsbibliotheken Europas. Wenn die Sonne flach steht, wird das Leuchten der Sonne von der Fassade so zurückgeworfen, dass Auto- und Fahrradfahrer_innen auf der Rempartstrasse so stark geblendet werden, dass sie nicht sicher weiterfahren können.'
+              ]
+            ]
+          ],
+          [
+            'title' => 'Theater Freiburg',
+            'subtitle' => 'Platz der Alten Synagoge',
+            'audio_file' => 'freiburg-theater-freiburg.mp3',
+            'latitude' => 47.995003,
+            'longitude' => 7.846148,
+            'facts' => [
+              [
+                'periode' => '1869-1870',
+                'text' => 'Bau der Synagoge der Jüdischen Gemeinde von Freiburg nach den Plänen von Georg Jakob Schneider.'
+              ],
+              [
+                'periode' => '1905-1910',
+                'text' => 'Bau des Stadttheaters durch den Oberbürgermeister Otto Winterer auf einem der ehemaligen Bastionshügel der Vauban-Befestigung nach Plänen des Berliner Architekten Heinrich Seeling.'
+              ],
+              [
+                'periode' => '8. Oktober 1910',
+                'text' => 'Eröffnung des neuen Theaters mit « Wallensteins Lager » von Schiller und « Festwiese », dem 3. Akt aus « Meistersinger » von Wagner.'
+              ],
+              [
+                'periode' => '1907-1911',
+                'text' => 'Bau des Universitätsgebäudes KG1 im Jugendstil. Es wird nach Plänen von Friedrich Ratzel und Hermann Billing errichtet. Mit seiner roten Sandsteinfassade zählt es zu den Freiburger Wahrzeichen.'
+              ],
+              [
+                'periode' => '26. Februar 1935',
+                'text' => 'Gastspiel von « Mary Wigman und ihrer Tanzgruppe » im Theater Freiburg. Das zweiteilige Abendprogramm beinhaltet unter anderem auch das weltbekannte Solo « Hexentanz ».'
+              ],
+              [
+                'periode' => '9./10. November 1938',
+                'text' => 'Die Synagoge wird in der Reichspogromnacht durch die SS und SA angezündet und brennt vollständig ab.'
+              ],
+              [
+                'periode' => '27. Januar 1944',
+                'text' => 'Zerstörung des Theaters durch einen Luftangriff auf Freiburg.'
+              ],
+              [
+                'periode' => '1945-1949',
+                'text' => 'Wiederaufbau des Theaters.'
+              ],
+              [
+                'periode' => '1949',
+                'text' => 'Wiedereröffnung des Grossen Hauses mit « Meistersinger » von Wagner.'
+              ],
+              [
+                'periode' => '1957-1961',
+                'text' => 'Bau des Universitätsgebäudes KG2 durch Otto Ernst Schweizer.'
+              ],
+              [
+                'periode' => '1961',
+                'text' => 'Installierung der Skulptur « Reclining Figure » von Henry Moore auf dem Platz vor dem KG2.'
+              ],
+              [
+                'periode' => '1996',
+                'text' => 'Umbenennung des Platzes auf « Platz der Alten Synagoge ».'
+              ],
+              [
+                'periode' => '21. Juli 2015',
+                'text' => 'Eröffnung der neuen Universitätsbibliothek, fast vollkommen neu gebaut durch das Basler Architekturbüro Degelo Architekten.'
+              ],
+              [
+                'periode' => '2. August 2017',
+                'text' => 'Eröffnung des neuen Platzes nach einem grossen Umbau nach Plänen des Architekten und Stadtplaners Volker Rosenstiel und des Landschaftsarchitekten Martin Schedlbauer. Ein Wasserbassin in Lage und Grösse den exakten Grundriss der Alten Synagoge nachzeichnend soll im Sinne einer Gedenkstädte symbolisch an deren Zerstörung erinnern.'
+              ],
+              [
+                'periode' => '20. September 2019',
+                'text' => 'Demonstration « Fridays for Future ». Über 20.000 Menschen versammeln sich auf dem Platz der Alten Synagoge, um gemeinsam für einen besseren Klimaschutz zu demonstrieren.'
+              ],
+              [
+                'periode' => '2000',
+                'text' => 'Einweihung des Mahnmals mit der Aufschrift « Gurs 1027km » durch die Künstlergruppe « Büro für ungewöhnliche Massnahmen ».  Es soll an die 1940 im Rahmen der Wagner-Bürckel-Aktion deportierten badischen Juden und Jüdinnen erinnern.'
+              ],
+              [
+                'periode' => '9. November 2020',
+                'text' => 'Einweihung - zum 82. Jahrestag der Zerstörung der Alten Synagoge - eines 100m langen Bronzeschriftbands mit dem Text « Erinnere Dich » in acht unterschiedlichen Sprachen konzipiert durch den Künstler Tobias Eder.'
+              ],
+              [
+                'periode' => '22. Juni 2020',
+                'text' => 'Night of light. Über 9000 Kulturinstitutionen in Europa leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.'
+              ],
+              [
+                'periode' => '25. und 26. September 2020',
+                'text' => 'Gastspiel der Performance « One One One » des schweiz-griechischen Choreografen Ioannis Mandafounis.'
+              ]
+            ]
+          ],
+        ]
       ],
       // Zurich
       [
@@ -109,7 +237,70 @@ class PlaceSeeder extends Seeder
         'slug' => 'bern', 
         'name' => 'Bern', 
         'position' => 3,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Dampfzentrale',
+            'subtitle' => 'Beim Eingangstor',
+            'audio_file' => 'bern-dampfzentrale.mp3',
+            'latitude' => 46.940578,
+            'longitude' => 7.443829,
+            'facts' => [
+              [
+                'periode' => '1903',
+                'text' => 'Bau der Dampfzentrale. Das Dampfkraftwerk wurde von Eduard Joos (1869 – 1917), einem der profiliertesten Berner Architekten, konzipiert.'
+              ],
+              [
+                'periode' => '1973',
+                'text' => 'Die Stromproduktion wird stillgelegt.'
+              ],
+              [
+                'periode' => '1986',
+                'text' => 'Gründung des « Verein Dampfzentrale » der zum Ziel hatte, die Dampfzentrale für kulturelle Zwecke zu nutzen.'
+              ],
+              [
+                'periode' => 'Mai 1987',
+                'text' => 'Da die Stadt Bern nicht auf die Forderungen des « Verein Dampfzentrale » einging, wurde das Gebäude besetzt. Diese Besetzung wird im Lied « Hansdampf » der Berner Rockband Züri West besungen.'
+              ],
+              [
+                'periode' => 'Oktober 1987',
+                'text' => 'Der Bernische Gemeinderat erteilt eine provisorische Bewilligung für die Nutzung der Dampfzentrale als Kulturzentrum.'
+              ],
+              [
+                'periode' => '1989 - 1999',
+                'text' => 'Die Dampfzentrale wird von den Architekten Peter Flückiger und Thomas Hostettler in enger Zusammenarbeit mit dem Denkmalschutz saniert und umgebaut. Danach gilt für die Dampfzentrale ein Subventionsvertrag mit der Stadt Bern.'
+              ],
+              [
+                'periode' => '1993',
+                'text' => 'Bei einem Gastspiel des Stadttheaters Ulm bei Tanz in Bern entsteht die Legende des Haustechnikers/Bühnenmeisters Hannes Müller, der sogenannte « esprit de la maison », ein imaginärer Techniker, der immer und für alles da ist.'
+              ],
+              [
+                'periode' => '2008 - 2012',
+                'text' => 'Zweite Sanierung und Instandsetzungsarbeiten durch Hebeisen + Vatter Architekten Bern.'
+              ],
+              [
+                'periode' => '2009',
+                'text' => 'Gastspiel von Living-room dancers (Cie Nicole Seiler) in Tanz in Bern. Private Wohnungen werden zur Bühne.'
+              ],
+              [
+                'periode' => '2016',
+                'text' => 'Die Bühnen- und Kostümbildnerin Anke Niehammer kreiert eine Installation aus Plexiglas für Tanz in Bern.'
+              ],
+              [
+                'periode' => 'Oktober 2017',
+                'text' => 'Die Berner Tänzerin und Choreografin Emma Murray kreiert das Stück Mother*Fuckers, das in der Dampfzentrale uraufgeführt wird.'
+              ],
+              [
+                'periode' => '22. Juni 2020',
+                'text' => 'Night of light. Über 1000 schweizer Kulturinstitutionen leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.'
+              ],
+              [
+                'periode' => 'Juli 2020',
+                'text' => 'Die Tänzerin Emma Murray improvisiert verschiedene Tänze für das Projekt Palimpsest.'
+              ]
+            ]
+          ],
+        ]
       ],
       // Genève
       [
@@ -257,7 +448,42 @@ class PlaceSeeder extends Seeder
         'slug' => 'bellinzona', 
         'name' => 'Bellinzona', 
         'position' => 8,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Teatro Sociale',
+            'subtitle' => 'Di fronte al teatro',
+            'audio_file' => 'bellinzona-teatro-sociale.mp3',
+            'latitude' => 46.191224,
+            'longitude' => 9.021457,
+            'facts' => [
+              [
+                'periode' => '1847',
+                'text' => 'Costruzione del Teatro Sociale su disegno dell\'architetto milanese Giacomo Moraglia, nello stile dei teatri all\'italiana e sul modello della Scala di Milano. Il teatro è edificato in parte sulle macerie delle antiche mura medievali.'
+              ],
+              [
+                'periode' => '19 giugno 1878',
+                'text' => 'Una rappresentazione dell\'opera Don Pasquale di Donizetti è trasmessa con una linea telefonica. È una prima mondiale.'
+              ],
+              [
+                'periode' => '1894',
+                'text' => 'Costruzione del ristorante lungo il teatro, dalla parte del giardino.'
+              ],
+              [
+                'periode' => '1993-1997',
+                'text' => 'Restauro del teatro nel rispetto del disegno originale. Demolizione del ristorante.'
+              ],
+              [
+                'periode' => '22 giugno 2020',
+                'text' => 'Night of light. In Svizzera oltre 1000 luoghi dedicati alla cultura sono illuminati di rosso. L\'azione vuole sensibilizzare la popolazione sulle difficoltà del settore culturale dopo la pandemia  SARS-CoV2 della primavera 2020.'
+              ],
+              [
+                'periode' => 'Luglio 2020',
+                'text' => 'La performer Camilla Parini crea delle coreografie inedite per il progetto Palimpsest.'
+              ]
+            ]
+          ],
+        ]
       ],
       // Lausanne
       [
