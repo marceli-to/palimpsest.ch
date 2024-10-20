@@ -4,11 +4,13 @@ const Places = (function() {
   let selectedItem = null;
   const accordions = {};
 
+  /* Init */
   function init() {
     initAccordion();
     loadMapboxScript().then(initMap);
   }
 
+  /* Accordion */
   function initAccordion() {
     document.querySelectorAll('[data-accordion]').forEach(accordion => {
       const slug = accordion.dataset.location;
@@ -47,6 +49,7 @@ const Places = (function() {
     content.style.opacity = '0';
   }
 
+  /* Map */
   function loadMapboxScript() {
     return new Promise((resolve, reject) => {
       if (window.mapboxgl) {
