@@ -1,7 +1,7 @@
 @props(['location'])
 <div 
   data-location="{{ $location->slug }}" 
-  class="relative border-b border-coral"
+  class="relative border-b border-coral scroll-mt-[300px]"
   data-accordion>
   <button 
     type="button" 

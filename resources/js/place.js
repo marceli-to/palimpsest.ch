@@ -31,6 +31,10 @@ const Places = (function() {
       }
       openAccordion(slug);
       selectedItem = slug;
+      // scroll the open accordion into view, wait 100ms to avoid blocking the UI
+      // setTimeout(() => {
+      //   accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
+      // }, 100);
     }
     updateMap(selectedItem);
   }

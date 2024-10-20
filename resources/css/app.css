@@ -7,15 +7,15 @@
 [x-cloak] {
   display: none;
 }
-
-/* Overflow handling for mobile devices
-html.xhas_menu {
-  @apply !overflow-y-hidden md:!overflow-y-scroll;
-}
-*/
+/* Hide main and footer when menu is open */
 html.has_menu main,
 html.has_menu footer {
   @apply !hidden;
+}
+
+/* Simplebar */
+.simplebar-scrollbar::before {
+  background-color: white !important;
 }
 
 /* Accordion */
