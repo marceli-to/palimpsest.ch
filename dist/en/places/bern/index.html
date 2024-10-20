@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-en.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="J6tU31DhGNjCywChqhzMCqsi1A8tYdMKZEaXXhnn">
+<meta name="csrf-token" content="1rwLOv47UadDW6uUek7E8EealZlkMKNHK0jogY6e">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -262,8 +262,96 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="dampfzentrale" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'dampfzentrale' ? null : 'dampfzentrale'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Dampfzentrale</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'dampfzentrale'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containerdampfzentrale" 
+  x-bind:style="selected === 'dampfzentrale' ? 'max-height: ' + $refs.containerdampfzentrale.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'dampfzentrale' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Beim Eingangstor</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1903</td>
+                <td>Bau der Dampfzentrale. Das Dampfkraftwerk wurde von Eduard Joos (1869 – 1917), einem der profiliertesten Berner Architekten, konzipiert.</td>
+              </tr>
+                          <tr>
+                <td>1973</td>
+                <td>Die Stromproduktion wird stillgelegt.</td>
+              </tr>
+                          <tr>
+                <td>1986</td>
+                <td>Gründung des « Verein Dampfzentrale » der zum Ziel hatte, die Dampfzentrale für kulturelle Zwecke zu nutzen.</td>
+              </tr>
+                          <tr>
+                <td>Mai 1987</td>
+                <td>Da die Stadt Bern nicht auf die Forderungen des « Verein Dampfzentrale » einging, wurde das Gebäude besetzt. Diese Besetzung wird im Lied « Hansdampf » der Berner Rockband Züri West besungen.</td>
+              </tr>
+                          <tr>
+                <td>Oktober 1987</td>
+                <td>Der Bernische Gemeinderat erteilt eine provisorische Bewilligung für die Nutzung der Dampfzentrale als Kulturzentrum.</td>
+              </tr>
+                          <tr>
+                <td>1989 - 1999</td>
+                <td>Die Dampfzentrale wird von den Architekten Peter Flückiger und Thomas Hostettler in enger Zusammenarbeit mit dem Denkmalschutz saniert und umgebaut. Danach gilt für die Dampfzentrale ein Subventionsvertrag mit der Stadt Bern.</td>
+              </tr>
+                          <tr>
+                <td>1993</td>
+                <td>Bei einem Gastspiel des Stadttheaters Ulm bei Tanz in Bern entsteht die Legende des Haustechnikers/Bühnenmeisters Hannes Müller, der sogenannte « esprit de la maison », ein imaginärer Techniker, der immer und für alles da ist.</td>
+              </tr>
+                          <tr>
+                <td>2008 - 2012</td>
+                <td>Zweite Sanierung und Instandsetzungsarbeiten durch Hebeisen + Vatter Architekten Bern.</td>
+              </tr>
+                          <tr>
+                <td>2009</td>
+                <td>Gastspiel von Living-room dancers (Cie Nicole Seiler) in Tanz in Bern. Private Wohnungen werden zur Bühne.</td>
+              </tr>
+                          <tr>
+                <td>2016</td>
+                <td>Die Bühnen- und Kostümbildnerin Anke Niehammer kreiert eine Installation aus Plexiglas für Tanz in Bern.</td>
+              </tr>
+                          <tr>
+                <td>Oktober 2017</td>
+                <td>Die Berner Tänzerin und Choreografin Emma Murray kreiert das Stück Mother*Fuckers, das in der Dampfzentrale uraufgeführt wird.</td>
+              </tr>
+                          <tr>
+                <td>22. Juni 2020</td>
+                <td>Night of light. Über 1000 schweizer Kulturinstitutionen leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.</td>
+              </tr>
+                          <tr>
+                <td>Juli 2020</td>
+                <td>Die Tänzerin Emma Murray improvisiert verschiedene Tänze für das Projekt Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'dampfzentrale' ? null : 'dampfzentrale'">Dampfzentrale</button>
           </div>
   </div>
 </div>

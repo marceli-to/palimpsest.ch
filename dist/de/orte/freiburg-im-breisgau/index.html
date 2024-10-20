@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="J6tU31DhGNjCywChqhzMCqsi1A8tYdMKZEaXXhnn">
+<meta name="csrf-token" content="1rwLOv47UadDW6uUek7E8EealZlkMKNHK0jogY6e">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -262,8 +262,188 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="tanzbrunnen" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'tanzbrunnen' ? null : 'tanzbrunnen'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Tanzbrunnen</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'tanzbrunnen'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertanzbrunnen" 
+  x-bind:style="selected === 'tanzbrunnen' ? 'max-height: ' + $refs.containertanzbrunnen.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'tanzbrunnen' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Am Rand des Tanzbrunnens</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>Ab 1745</td>
+                <td>Auf einem der ehemaligen Bastionshügel der Vauban-Befestigung wird der Park « Neue Promenade » angelegt, später « Alleegarten » oder « Hochallee ».</td>
+              </tr>
+                          <tr>
+                <td>19. Jahrhundert</td>
+                <td>Ausbau des Parks und Bau einer Brunnenanlage. Zentrales Element des Brunnens war der aus Steinen aufgeschichtete Fels, über den sich ein künstlicher Wasserfall ins Becken ergoss.</td>
+              </tr>
+                          <tr>
+                <td>1880</td>
+                <td>Errichtung einer Figurengruppe von Bertold Knittel, gestiftet von « Verein zur Verschönerung der Stadt Freiburg » : Drei Knaben verkörperten die drei Quellflüsse der Dreisam : Ibenbach, Wagensteigbach und Rotbach.</td>
+              </tr>
+                          <tr>
+                <td>1944</td>
+                <td>Zerstörung der Brunnenanlage.</td>
+              </tr>
+                          <tr>
+                <td>Nach 1945</td>
+                <td>Erneuerung des Brunnens in Beton ohne die Figurengruppe.</td>
+              </tr>
+                          <tr>
+                <td>26. Oktober 2007</td>
+                <td>Übergabe der Skulptur « Bündel-Stele I » von Roland Phleps. Er hat die Stele aus Edelstahl anlässlich des 550-jährigen Universitätsjubiläums der Stadt Freiburg geschenkt.</td>
+              </tr>
+                          <tr>
+                <td>2011</td>
+                <td>Stilllegung des Brunnens wegen technischer Probleme beim Wasserfall. Das trockene Becken wird zum « Tanzbrunnen ».</td>
+              </tr>
+                          <tr>
+                <td>21. Juli 2015</td>
+                <td>Eröffnung der neuen Universitätsbibliothek, fast vollkommen neu gebaut durch das Basler Architekturbüro Degelo Architekten. Sie gilt als eine der modernsten und grössten Universitätsbibliotheken Europas. Wenn die Sonne flach steht, wird das Leuchten der Sonne von der Fassade so zurückgeworfen, dass Auto- und Fahrradfahrer_innen auf der Rempartstrasse so stark geblendet werden, dass sie nicht sicher weiterfahren können.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
+              <div 
+  data-index="theater_freiburg" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'theater_freiburg' ? null : 'theater_freiburg'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Theater Freiburg</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'theater_freiburg'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertheater_freiburg" 
+  x-bind:style="selected === 'theater_freiburg' ? 'max-height: ' + $refs.containertheater_freiburg.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'theater_freiburg' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Platz der Alten Synagoge</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1869-1870</td>
+                <td>Bau der Synagoge der Jüdischen Gemeinde von Freiburg nach den Plänen von Georg Jakob Schneider.</td>
+              </tr>
+                          <tr>
+                <td>1905-1910</td>
+                <td>Bau des Stadttheaters durch den Oberbürgermeister Otto Winterer auf einem der ehemaligen Bastionshügel der Vauban-Befestigung nach Plänen des Berliner Architekten Heinrich Seeling.</td>
+              </tr>
+                          <tr>
+                <td>8. Oktober 1910</td>
+                <td>Eröffnung des neuen Theaters mit « Wallensteins Lager » von Schiller und « Festwiese », dem 3. Akt aus « Meistersinger » von Wagner.</td>
+              </tr>
+                          <tr>
+                <td>1907-1911</td>
+                <td>Bau des Universitätsgebäudes KG1 im Jugendstil. Es wird nach Plänen von Friedrich Ratzel und Hermann Billing errichtet. Mit seiner roten Sandsteinfassade zählt es zu den Freiburger Wahrzeichen.</td>
+              </tr>
+                          <tr>
+                <td>26. Februar 1935</td>
+                <td>Gastspiel von « Mary Wigman und ihrer Tanzgruppe » im Theater Freiburg. Das zweiteilige Abendprogramm beinhaltet unter anderem auch das weltbekannte Solo « Hexentanz ».</td>
+              </tr>
+                          <tr>
+                <td>9./10. November 1938</td>
+                <td>Die Synagoge wird in der Reichspogromnacht durch die SS und SA angezündet und brennt vollständig ab.</td>
+              </tr>
+                          <tr>
+                <td>27. Januar 1944</td>
+                <td>Zerstörung des Theaters durch einen Luftangriff auf Freiburg.</td>
+              </tr>
+                          <tr>
+                <td>1945-1949</td>
+                <td>Wiederaufbau des Theaters.</td>
+              </tr>
+                          <tr>
+                <td>1949</td>
+                <td>Wiedereröffnung des Grossen Hauses mit « Meistersinger » von Wagner.</td>
+              </tr>
+                          <tr>
+                <td>1957-1961</td>
+                <td>Bau des Universitätsgebäudes KG2 durch Otto Ernst Schweizer.</td>
+              </tr>
+                          <tr>
+                <td>1961</td>
+                <td>Installierung der Skulptur « Reclining Figure » von Henry Moore auf dem Platz vor dem KG2.</td>
+              </tr>
+                          <tr>
+                <td>1996</td>
+                <td>Umbenennung des Platzes auf « Platz der Alten Synagoge ».</td>
+              </tr>
+                          <tr>
+                <td>21. Juli 2015</td>
+                <td>Eröffnung der neuen Universitätsbibliothek, fast vollkommen neu gebaut durch das Basler Architekturbüro Degelo Architekten.</td>
+              </tr>
+                          <tr>
+                <td>2. August 2017</td>
+                <td>Eröffnung des neuen Platzes nach einem grossen Umbau nach Plänen des Architekten und Stadtplaners Volker Rosenstiel und des Landschaftsarchitekten Martin Schedlbauer. Ein Wasserbassin in Lage und Grösse den exakten Grundriss der Alten Synagoge nachzeichnend soll im Sinne einer Gedenkstädte symbolisch an deren Zerstörung erinnern.</td>
+              </tr>
+                          <tr>
+                <td>20. September 2019</td>
+                <td>Demonstration « Fridays for Future ». Über 20.000 Menschen versammeln sich auf dem Platz der Alten Synagoge, um gemeinsam für einen besseren Klimaschutz zu demonstrieren.</td>
+              </tr>
+                          <tr>
+                <td>2000</td>
+                <td>Einweihung des Mahnmals mit der Aufschrift « Gurs 1027km » durch die Künstlergruppe « Büro für ungewöhnliche Massnahmen ».  Es soll an die 1940 im Rahmen der Wagner-Bürckel-Aktion deportierten badischen Juden und Jüdinnen erinnern.</td>
+              </tr>
+                          <tr>
+                <td>9. November 2020</td>
+                <td>Einweihung - zum 82. Jahrestag der Zerstörung der Alten Synagoge - eines 100m langen Bronzeschriftbands mit dem Text « Erinnere Dich » in acht unterschiedlichen Sprachen konzipiert durch den Künstler Tobias Eder.</td>
+              </tr>
+                          <tr>
+                <td>22. Juni 2020</td>
+                <td>Night of light. Über 9000 Kulturinstitutionen in Europa leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.</td>
+              </tr>
+                          <tr>
+                <td>25. und 26. September 2020</td>
+                <td>Gastspiel der Performance « One One One » des schweiz-griechischen Choreografen Ioannis Mandafounis.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'tanzbrunnen' ? null : 'tanzbrunnen'">Tanzbrunnen</button>
+              <button @click="selected = selected === 'theater_freiburg' ? null : 'theater_freiburg'">Theater Freiburg</button>
           </div>
   </div>
 </div>

@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="J6tU31DhGNjCywChqhzMCqsi1A8tYdMKZEaXXhnn">
+<meta name="csrf-token" content="1rwLOv47UadDW6uUek7E8EealZlkMKNHK0jogY6e">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -262,8 +262,68 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="teatro_sociale" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'teatro_sociale' ? null : 'teatro_sociale'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Teatro Sociale</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'teatro_sociale'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containerteatro_sociale" 
+  x-bind:style="selected === 'teatro_sociale' ? 'max-height: ' + $refs.containerteatro_sociale.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'teatro_sociale' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Di fronte al teatro</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1847</td>
+                <td>Costruzione del Teatro Sociale su disegno dell&#039;architetto milanese Giacomo Moraglia, nello stile dei teatri all&#039;italiana e sul modello della Scala di Milano. Il teatro è edificato in parte sulle macerie delle antiche mura medievali.</td>
+              </tr>
+                          <tr>
+                <td>19 giugno 1878</td>
+                <td>Una rappresentazione dell&#039;opera Don Pasquale di Donizetti è trasmessa con una linea telefonica. È una prima mondiale.</td>
+              </tr>
+                          <tr>
+                <td>1894</td>
+                <td>Costruzione del ristorante lungo il teatro, dalla parte del giardino.</td>
+              </tr>
+                          <tr>
+                <td>1993-1997</td>
+                <td>Restauro del teatro nel rispetto del disegno originale. Demolizione del ristorante.</td>
+              </tr>
+                          <tr>
+                <td>22 giugno 2020</td>
+                <td>Night of light. In Svizzera oltre 1000 luoghi dedicati alla cultura sono illuminati di rosso. L&#039;azione vuole sensibilizzare la popolazione sulle difficoltà del settore culturale dopo la pandemia  SARS-CoV2 della primavera 2020.</td>
+              </tr>
+                          <tr>
+                <td>Luglio 2020</td>
+                <td>La performer Camilla Parini crea delle coreografie inedite per il progetto Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'teatro_sociale' ? null : 'teatro_sociale'">Teatro Sociale</button>
           </div>
   </div>
 </div>
