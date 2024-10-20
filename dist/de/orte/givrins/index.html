@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="MgFb49YENLK69GYRXbudvijLTEqkVnOox1dgqr7b">
+<meta name="csrf-token" content="4LKjXXtQ1bulJtSerFAe5kPGamrU0fVZWCgwrDh9">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -29,7 +29,7 @@
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.DyOiK_dm.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.DyOiK_dm.css" /><noscript>
+<script type="module" src="https://palimpsest.ch.marcelito.ch:5173/@vite/client"></script><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch:5173/resources/css/app.css" /><noscript>
   <style>
     .simplebar-content-wrapper {
       scrollbar-width: auto;
@@ -51,7 +51,7 @@
   <div class="max-w-page mx-auto px-16 lg:px-32 relative w-full flex justify-between">
   <a 
   href="javascript:;" 
-  x-on:click="show_menu = ! show_menu; " 
+  x-on:click="show_menu = ! show_menu; ; $event.target.closest('html').classList.toggle('has_menu');" 
   title="Menü anzeigen"
   class="absolute left-16 top-17 lg:left-0 lg:top-34 lg:relative flex justify-center w-32 lg:w-46">
   <span x-show="show_menu === false">
@@ -74,7 +74,7 @@
   x-cloak 
   x-show="show_menu">
   <div class="pb-16 lg:pb-0 h-dvh lg:h-screen max-h-[calc(100dvh_-_90px)] lg:max-h-[calc(100dvh_-_114px)] overflow-y-auto" data-simplebar>
-    <div class="flex flex-col justify-between h-dvh lg:h-screen max-h-[calc(100dvh_-_90px)] lg:max-h-[calc(100dvh_-_114px)]">
+    <div class="flex flex-col justify-between h-dvh lg:h-screen">
       <nav class="w-full py-18 lg:py-48 lg:px-32 max-w-page mx-auto">
         <ul class="flex flex-col gap-y-16 lg:gap-y-8">
         <li>
@@ -254,7 +254,7 @@
   <div class="px-16 lg:px-0">
     <a 
       href="javascript:;" 
-      x-on:click="show_menu = true; ;" 
+      x-on:click="show_menu = true; ; $event.target.closest('html').classList.toggle('has_menu');" 
       class="text-4xl">
       X
     </a>
@@ -366,6 +366,6 @@
   </ul>
 </nav>    </div>
 </div></footer>
-  <link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.BM0-tcIW.css" /><link rel="modulepreload" href="https://palimpsest.ch.marcelito.ch/build/assets/app.DNGSd9wp.js" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.BM0-tcIW.css" /><script type="module" src="https://palimpsest.ch.marcelito.ch/build/assets/app.DNGSd9wp.js"></script></body>
+  <script type="module" src="https://palimpsest.ch.marcelito.ch:5173/@vite/client"></script><script type="module" src="https://palimpsest.ch.marcelito.ch:5173/resources/js/app.js"></script></body>
 </html>
 <!-- made with ❤ by bivgrafik.ch & marceli.to -->
