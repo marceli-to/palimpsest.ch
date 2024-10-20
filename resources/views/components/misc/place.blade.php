@@ -7,7 +7,7 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
   <div class="px-16 lg:px-0">
     <a 
       href="javascript:;" 
-      x-on:click="show_menu = true; {{ !Request::routeIs('*.page.place') ? 'is_pages = false' : '' }};" 
+      x-on:click="show_menu = true; {{ !Request::routeIs('*.page.place') ? 'is_pages = false' : '' }}; $event.target.closest('html').classList.toggle('has_menu');" 
       class="text-4xl">
       X
     </a>

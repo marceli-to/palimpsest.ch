@@ -12,12 +12,12 @@
 html.xhas_menu {
   @apply !overflow-y-hidden md:!overflow-y-scroll;
 }
-
-html.xhas_menu main,
-html.xhas_menu footer {
+*/
+html.has_menu main,
+html.has_menu footer {
   @apply !hidden;
 }
-*/
+
 
 
 .accordion-transition {
