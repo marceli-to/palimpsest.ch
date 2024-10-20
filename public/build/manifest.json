@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app.CUhCpt6g.css",
+    "file": "assets/app.TwDcp6Vu.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -12,6 +12,11 @@
     "file": "assets/AtlasGrotesk-Medium-Web.woff2",
     "src": "resources/css/fonts/AtlasGrotesk-Medium-Web.woff2"
   },
+  "resources/css/map.css": {
+    "file": "assets/map.DCOSfy3p.css",
+    "src": "resources/css/map.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
     "file": "assets/app.DNGSd9wp.js",
     "name": "app",
@@ -20,5 +25,11 @@
     "css": [
       "assets/app.BM0-tcIW.css"
     ]
+  },
+  "resources/js/map.js": {
+    "file": "assets/map.DTUZJCN5.js",
+    "name": "map",
+    "src": "resources/js/map.js",
+    "isEntry": true
   }
 }

@@ -28,7 +28,12 @@ export default defineConfig({
   },
   plugins: [
     laravel({
-      input: ['resources/css/app.css', 'resources/js/app.js'],
+      input: [
+        'resources/css/app.css',
+        'resources/css/map.css',
+        'resources/js/app.js',
+        'resources/js/map.js',
+      ],
       refresh: true,
     }),
   ],

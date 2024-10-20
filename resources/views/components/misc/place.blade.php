@@ -20,9 +20,24 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
       @endforeach
     </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
-      @foreach ($place->locations as $location)
+      {{-- @foreach ($place->locations as $location)
         <button @click="selected = selected === '{{ $location->slug }}' ? null : '{{ $location->slug }}'">{{ $location->title }}</button>
-      @endforeach
+      @endforeach --}}
+      <div 
+        id="map" 
+        class="w-full min-h-[300px]"
+        data-map-zoom="12"
+        data-map-locations='[
+          @foreach ($place->locations as $location)
+            {
+              "coordinates": [{{ $location->longitude }}, {{ $location->latitude }}],
+              "title": "{{ $location->title }}",
+              "slug": "{{ $location->slug }}"
+            }
+            {{ !$loop->last ? ',' : '' }}
+          @endforeach
+        ]'>
+      </div>
     </div>
   </div>
 </x-layout.inner>

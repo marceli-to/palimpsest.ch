@@ -16,6 +16,10 @@ class Location extends Model
     'place_id'
   ];
 
+  protected $appends = [
+    'map_data'
+  ];
+
   public function facts()
   {
     return $this->hasMany(Fact::class);
@@ -29,6 +33,16 @@ class Location extends Model
   public function scopePublished($query)
   {
     return $query->where('published', true);
+  }
+
+  public function getMapDataAttribute()
+  {
+    return [
+      'longitude' => $this->longitude,
+      'latitude' => $this->latitude,
+      'title' => $this->title,
+      'slug' => $this->slug
+    ];
   }
 
 }
