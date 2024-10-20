@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="FkYjrxj787kfmoVSiZKtZL1P99crtEYmAr4fm579">
+<meta name="csrf-token" content="MgFb49YENLK69GYRXbudvijLTEqkVnOox1dgqr7b">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -262,8 +262,76 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="le_grutli" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'le_grutli' ? null : 'le_grutli'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Le Grütli</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'le_grutli'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containerle_grutli" 
+  x-bind:style="selected === 'le_grutli' ? 'max-height: ' + $refs.containerle_grutli.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'le_grutli' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Place Béla Bartok</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1871 - 1873</td>
+                <td>Construction de l&#039;École du Grütli sur les plans de l&#039;architecte Georges Matthey.</td>
+              </tr>
+                          <tr>
+                <td>1873 – 1969</td>
+                <td>L&#039;École du Grütli réunit des écoles primaires, l&#039;École de dessin et l&#039;École industrielle. Dès 1929 les élèves d&#039;école primaire n&#039;ayant pu accéder au Collège étaient placés dans cette école.</td>
+              </tr>
+                          <tr>
+                <td>1920 - 1930</td>
+                <td>Béla Bartok, pianiste et compositeur hongrois travaille avec Ernest Ansermet et l&#039;Orchestre de la suisse romande au Victoria Hall à Genève. Le préau de l&#039;ancienne école du Grütli est nommé d&#039;après lui.</td>
+              </tr>
+                          <tr>
+                <td>1987 - 1989</td>
+                <td>Transformation du bâtiment en Maison des arts du Grütli par le bureau d&#039;étude Jean Stryjenski et Urs Tschumi.</td>
+              </tr>
+                          <tr>
+                <td>13 novembre 1988</td>
+                <td>Inauguration de la Maison des arts du Grütli. L&#039;artiste Xavier Juliot installe une sculpture gonflable sur le toit pour l&#039;occasion.</td>
+              </tr>
+                          <tr>
+                <td>1991</td>
+                <td>Répétitions de Cantus Planus, chorégraphie de Noémie Lapzeson dans le studio de l&#039;adc nommé aujourd&#039;hui Studio Noémie Lapzeson.</td>
+              </tr>
+                          <tr>
+                <td>22 juin 2020</td>
+                <td>Night of light. En Suisse, plus de 1000 lieux culturels s&#039;éclairent en rouge. Cette action vise à sensibiliser la population aux difficultés rencontrées par le secteur culturel après la pandémie de SARS-CoV2 du printemps 2020.</td>
+              </tr>
+                          <tr>
+                <td>Août 2020</td>
+                <td>La danseuse Marthe Krummenacher crée des danses inédites pour le projet Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'le_grutli' ? null : 'le_grutli'">Le Grütli</button>
           </div>
   </div>
 </div>

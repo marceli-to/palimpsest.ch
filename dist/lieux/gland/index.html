@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-fr.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="FkYjrxj787kfmoVSiZKtZL1P99crtEYmAr4fm579">
+<meta name="csrf-token" content="MgFb49YENLK69GYRXbudvijLTEqkVnOox1dgqr7b">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -262,8 +262,64 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="fortin_bergerie_lac" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'fortin_bergerie_lac' ? null : 'fortin_bergerie_lac'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Fortin Bergerie Lac</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'fortin_bergerie_lac'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containerfortin_bergerie_lac" 
+  x-bind:style="selected === 'fortin_bergerie_lac' ? 'max-height: ' + $refs.containerfortin_bergerie_lac.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'fortin_bergerie_lac' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Au bord de la route</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1937</td>
+                <td>Premier renforcement du terrain sur le tracé de la rivière Promenthouse. La création de cette ligne de défense répond à la protection contre la menace allemande. Elle va du pied du Jura au Lac Léman en passant par Bassins, Begnins, Vich, Gland, Prangins.</td>
+              </tr>
+                          <tr>
+                <td>1940</td>
+                <td>Construction du fortin «Bergerie Lac». Il est armé par deux canons d&#039;infanterie 4.7 cm et trois mitrailleuses 11 (1911). Il est géré par un commandant et seize soldats, il est opérationnel vingt-quatre heures sur vingt-quatre.</td>
+              </tr>
+                          <tr>
+                <td>1940 à 1942</td>
+                <td>Constructions des «Toblerones», ligne de défense antichars.</td>
+              </tr>
+                          <tr>
+                <td>1985</td>
+                <td>Construction du Golf du Domaine Impérial imaginé par le designer de terrains de golf Pete Dye.</td>
+              </tr>
+                          <tr>
+                <td>1995</td>
+                <td>Suite à la réforme Armée 95 les troupes disparaissent des frontières. Création de l&#039;Association de la Ligne fortifiée de la Promenthouse (ALFP) par d&#039;anciens officiers, sous-officiers et soldats soucieux de conserver le patrimoine militaire. Aménagement du fortin camouflé en villa, dit la «Villa Rose», en musée et création d&#039;un parcours didactique.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'fortin_bergerie_lac' ? null : 'fortin_bergerie_lac'">Fortin Bergerie Lac</button>
           </div>
   </div>
 </div>

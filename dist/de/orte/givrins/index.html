@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="FkYjrxj787kfmoVSiZKtZL1P99crtEYmAr4fm579">
+<meta name="csrf-token" content="MgFb49YENLK69GYRXbudvijLTEqkVnOox1dgqr7b">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -262,8 +262,64 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="route_de_la_bellangere" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'route_de_la_bellangere' ? null : 'route_de_la_bellangere'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Route de la Bellangère</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'route_de_la_bellangere'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containerroute_de_la_bellangere" 
+  x-bind:style="selected === 'route_de_la_bellangere' ? 'max-height: ' + $refs.containerroute_de_la_bellangere.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'route_de_la_bellangere' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>A la sortie du village</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>Dès 1087</td>
+                <td>Village de Givrins attesté par les sources d&#039;archives dès 1087.</td>
+              </tr>
+                          <tr>
+                <td>1916</td>
+                <td>Création de la gare de Givrins, sur la ligne Nyon-Saint-Cergue.</td>
+              </tr>
+                          <tr>
+                <td>24 mai 1919</td>
+                <td>Création de la Fédération Vaudoise des Jeunesses Campagnardes (FVJC). «La Fédération a pour objet de coordonner les jeunes forces campagnardes en unissant les Sociétés de Jeunesse vaudoises (…). Elle s&#039;intéresse à toutes les questions patriotiques, économiques, sociales ou sportives, tendant au progrès de la cause agricole, viticole et montagnarde, ainsi qu&#039;au développement matériel, intellectuel, moral et physique de ses membres en particulier et de la communauté en général».</td>
+              </tr>
+                          <tr>
+                <td>2013</td>
+                <td>La famille Prélaz de Givrins qui gère l&#039;alpage La Baronne, au-dessus de La Cure, organise sa 70ème désalpe.</td>
+              </tr>
+                          <tr>
+                <td>20 au 24 juin 2018</td>
+                <td>72ème giron organisé par la FVJC. Le giron est une manifestation festive et sportive. Le tir à la corde est une des épreuves phares.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'route_de_la_bellangere' ? null : 'route_de_la_bellangere'">Route de la Bellangère</button>
           </div>
   </div>
 </div>
