@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="uTukc2yqgTpuuDDpNmQ43dTeCwtobFC4BQhuUqTX">
+<meta name="csrf-token" content="Ap4aAOSAGJP7SJttWJrvRCCLiiNJzNz44OF5cvJg">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -258,8 +258,80 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="tlh" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'tlh' ? null : 'tlh'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>TLH</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'tlh'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertlh" 
+  x-bind:style="selected === 'tlh' ? 'max-height: ' + $refs.containertlh.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'tlh' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Devant l&#039;entrée</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1945</td>
+                <td>Edification du bâtiment par l&#039;entreprise de constructions métalliques Berclaz-Métrailler SA, fleuron de l&#039;industrie sierroise des années cinquante.</td>
+              </tr>
+                          <tr>
+                <td>11 septembre 1999</td>
+                <td>Après des travaux de transformation Les Halles ouvrent leurs portes. Gérées par l&#039;ATOUT (Association du Théâtre Ouvert à Tous) Les Halles se présentent comme un lieu public de création où les spectacles invités côtoient des productions de sociétés ou d&#039;artistes régionaux.</td>
+              </tr>
+                          <tr>
+                <td>2006</td>
+                <td>Spectacle de l&#039;école de danse de Danielle Wenger.</td>
+              </tr>
+                          <tr>
+                <td>2011-2012</td>
+                <td>La ville de Sierre reprend les lieux et le TLH est inauguré.</td>
+              </tr>
+                          <tr>
+                <td>Mai 2017</td>
+                <td>Performance Milles Yeux dans le foyer du TLH dans le cadre de la Fête de la Danse par les artistes Yohann Closuit, Simon Crettol et Alice Richtarch.</td>
+              </tr>
+                          <tr>
+                <td>26 novembre au 7 décembre 2019</td>
+                <td>Simon Crettol présente son solo chorégraphique Raphaël au TLH.</td>
+              </tr>
+                          <tr>
+                <td>13 mars au 11 avril 2020</td>
+                <td>L&#039;artiste Latifa Echakhch est l&#039;invitée de l&#039;EDHEA (École de design et haute école d&#039;art du Valais) au CUBE, espace d&#039;exposition installé dans le foyer du TLH-Sierre. Elle réalise une œuvre murale qui englobe les trois faces visibles du CUBE. Le vernissage est annulé en raison de la pandémie de SARS-CoV2.</td>
+              </tr>
+                          <tr>
+                <td>22 juin 2020</td>
+                <td>Night of light. En Suisse, plus de 1000 lieux culturels s&#039;éclairent en rouge. Cette action vise à sensibiliser la population aux difficultés rencontrées par le secteur culturel après la pandémie de SARS-CoV2 du printemps 2020.</td>
+              </tr>
+                          <tr>
+                <td>Juillet 2020</td>
+                <td>Le danseur Simon Crettol crée des danses inédites pour le projet Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'tlh' ? null : 'tlh'">TLH</button>
           </div>
   </div>
 </div>

@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-fr.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="uTukc2yqgTpuuDDpNmQ43dTeCwtobFC4BQhuUqTX">
+<meta name="csrf-token" content="Ap4aAOSAGJP7SJttWJrvRCCLiiNJzNz44OF5cvJg">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -258,8 +258,76 @@
   </div>
   <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
     <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="theater_casino_zug" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'theater_casino_zug' ? null : 'theater_casino_zug'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Theater Casino Zug</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'theater_casino_zug'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertheater_casino_zug" 
+  x-bind:style="selected === 'theater_casino_zug' ? 'max-height: ' + $refs.containertheater_casino_zug.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'theater_casino_zug' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Vor dem Eingang</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1808</td>
+                <td>Aus dem Kreis der Stadtbürgerschaft wird die private Theatergesellschaft Zug gegründet. Ihr Hauptziel : Alle Mitglieder üben sich wöchentlich im Vortragen und Theaterspielen und bringen von Zeit zu Zeit Stücke zur Aufführung.</td>
+              </tr>
+                          <tr>
+                <td>1909</td>
+                <td>Einweihung des neuen Baus an der Artherstrasse 9. Das Gebäude wurde vom damals erst 27-jährigen Zuger Architekten Dagobert Keiser entworfen und gebaut.</td>
+              </tr>
+                          <tr>
+                <td>1961</td>
+                <td>Die Skulptur Knife Edge des Britischen Bildhauers Henry Moore wird am Übergang von der Parkanlage des Theater Casino zum Seebad Seeliken, in der äussersten Ecke des Holzsteges angebracht.</td>
+              </tr>
+                          <tr>
+                <td>1981</td>
+                <td>Eröffnung des Neubaus.  Das Projekt der Zuger Architekten Hans Peter Ammann und Peter Baumann überzeugt durch die geschickte Verknüpfung von Alt- und Neubau.</td>
+              </tr>
+                          <tr>
+                <td>2015-2017</td>
+                <td>Das Theater Casino Zug wird vom Architekturbüro Edelmann Krell renoviert. Die im Altbau wiederhergestellte Fassade und die im Innern rekonstruierte Farbigkeit stehen in selbstbewusstem Kontrast zur von rotem Sichtbeton und Carrara-Marmor gepràgten Materialwelt des Erweiterungsbaus. Das neue Verbindungsbauwerk schafft einen repräsentativen Auftakt zur Raumachse des Festsaals. Dieser entfaltet durch die Wiederherstellung der verglasten Türöffnungen wieder jene lichte, die Umgebung einbeziehende Raumatmosphäre die ihm ursprünglich zugedacht war.</td>
+              </tr>
+                          <tr>
+                <td>6. März 2020</td>
+                <td>Die Sängerin Malin Hartelius und der Cellist Claudius Herrmann besuchen das Theater Casino Zug und spielen spontan auf der Bühne des Altbaus die Arie « Lascia ch&#039;io pianga » von Georg Friedrich Händel, um die Akustik des Saals zu erproben.</td>
+              </tr>
+                          <tr>
+                <td>22. Juni 2020</td>
+                <td>Night of light. Über 1000 schweizer Kulturinstitutionen leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.</td>
+              </tr>
+                          <tr>
+                <td>Juli 2020</td>
+                <td>Die Tänzerin Katrin Kolo improvisiert verschiedene Tänze für das Projekt Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'theater_casino_zug' ? null : 'theater_casino_zug'">Theater Casino Zug</button>
           </div>
   </div>
 </div>
