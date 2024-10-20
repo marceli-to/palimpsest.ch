@@ -16,7 +16,7 @@
   x-cloak 
   x-show="show_menu">
   <div class="pb-16 lg:pb-0 h-dvh lg:h-screen max-h-[calc(100dvh_-_90px)] lg:max-h-[calc(100dvh_-_114px)] overflow-y-auto" data-simplebar>
-    <div class="flex flex-col justify-between h-dvh lg:h-screen max-h-[calc(100dvh_-_78px)] lg:max-h-[calc(100dvh_-_114px)]">
+    <div class="flex flex-col justify-between h-dvh lg:h-screen max-h-[calc(100dvh_-_90px)] lg:max-h-[calc(100dvh_-_114px)]">
       <nav class="w-full py-18 lg:py-48 lg:px-32 max-w-page mx-auto">
         <ul class="flex flex-col gap-y-16 lg:gap-y-8">
         <x-menu.main-item href="page.about" title="A propos" />
