@@ -357,14 +357,76 @@ class PlaceSeeder extends Seeder
         'slug' => 'gland', 
         'name' => 'Gland', 
         'position' => 5,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Fortin Bergerie Lac',
+            'subtitle' => 'Au bord de la route',
+            'audio_file' => 'gland-fortin-bergerie-lac.mp3',
+            'latitude' => 46.431007,
+            'longitude' => 6.200011,
+            'facts' => [
+              [
+                'periode' => '1937',
+                'text' => 'Premier renforcement du terrain sur le tracé de la rivière Promenthouse. La création de cette ligne de défense répond à la protection contre la menace allemande. Elle va du pied du Jura au Lac Léman en passant par Bassins, Begnins, Vich, Gland, Prangins.'
+              ],
+              [
+                'periode' => '1940',
+                'text' => 'Construction du fortin «Bergerie Lac». Il est armé par deux canons d\'infanterie 4.7 cm et trois mitrailleuses 11 (1911). Il est géré par un commandant et seize soldats, il est opérationnel vingt-quatre heures sur vingt-quatre.'
+              ],
+              [
+                'periode' => '1940 à 1942',
+                'text' => 'Constructions des «Toblerones», ligne de défense antichars.'
+              ],
+              [
+                'periode' => '1985',
+                'text' => 'Construction du Golf du Domaine Impérial imaginé par le designer de terrains de golf Pete Dye.'
+              ],
+              [
+                'periode' => '1995',
+                'text' => 'Suite à la réforme Armée 95 les troupes disparaissent des frontières. Création de l\'Association de la Ligne fortifiée de la Promenthouse (ALFP) par d\'anciens officiers, sous-officiers et soldats soucieux de conserver le patrimoine militaire. Aménagement du fortin camouflé en villa, dit la «Villa Rose», en musée et création d\'un parcours didactique.'
+              ]
+            ]
+          ],
+        ]
       ],
       // Givrins
       [
         'slug' => 'givrins', 
         'name' => 'Givrins', 
         'position' => 6,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Route de la Bellangère',
+            'subtitle' => 'A la sortie du village',
+            'audio_file' => 'givrins-route-de-la-bellangere.mp3',
+            'latitude' => 46.431007,
+            'longitude' => 6.200011,
+            'facts' => [
+              [
+                'periode' => 'Dès 1087',
+                'text' => 'Village de Givrins attesté par les sources d\'archives dès 1087.'
+              ],
+              [
+                'periode' => '1916',
+                'text' => 'Création de la gare de Givrins, sur la ligne Nyon-Saint-Cergue.'
+              ],
+              [
+                'periode' => '24 mai 1919',
+                'text' => 'Création de la Fédération Vaudoise des Jeunesses Campagnardes (FVJC). «La Fédération a pour objet de coordonner les jeunes forces campagnardes en unissant les Sociétés de Jeunesse vaudoises (…). Elle s\'intéresse à toutes les questions patriotiques, économiques, sociales ou sportives, tendant au progrès de la cause agricole, viticole et montagnarde, ainsi qu\'au développement matériel, intellectuel, moral et physique de ses membres en particulier et de la communauté en général».'
+              ],
+              [
+                'periode' => '2013',
+                'text' => 'La famille Prélaz de Givrins qui gère l\'alpage La Baronne, au-dessus de La Cure, organise sa 70ème désalpe.'
+              ],
+              [
+                'periode' => '20 au 24 juin 2018',
+                'text' => '72ème giron organisé par la FVJC. Le giron est une manifestation festive et sportive. Le tir à la corde est une des épreuves phares.'
+              ]
+            ]
+          ],
+        ]
       ],
       // Nyon
       [
