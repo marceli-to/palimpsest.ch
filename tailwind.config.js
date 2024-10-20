@@ -30,7 +30,7 @@ export default {
       },
 
       fontFamily: {
-        'medium': ['AtlasGroteskMedium', ...defaultTheme.fontFamily.sans],
+        'medium': ['AtlasGroteskMedium'],
       },
 
       fontSize: {
