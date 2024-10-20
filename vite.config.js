@@ -6,7 +6,16 @@ export default defineConfig({
   resolve: {
     alias: {
       img: resolve('resources/img'),
-      //fonts: resolve('resources/css/fonts'),
+      fonts: resolve('resources/css/fonts'),
+    }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
     }
   },
   plugins: [
