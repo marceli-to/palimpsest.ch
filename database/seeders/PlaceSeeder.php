@@ -706,7 +706,50 @@ class PlaceSeeder extends Seeder
         'slug' => 'luxembourg', 
         'name' => 'Luxembourg', 
         'position' => 12,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Banannefabrik',
+            'subtitle' => '19 Rue du Puit',
+            'audio_file' => 'luxembourg-banannefabrik.mp3',
+            'latitude' => 49.598300853564304,
+            'longitude' => 6.1357810469342144,
+            'facts' => [
+              [
+                'periode' => '1960',
+                'text' => 'Construction du bâtiment par la société Coprilux'
+              ],
+              [
+                'periode' => '1960-1990',
+                'text' => 'Les habitants du quartier donnent aux bâtiment le nom "Banannefabrik", qui a servi de dépôt de fruits et légumes.'
+              ],
+              [
+                'periode' => 'Années 1990',
+                'text' => 'La Banannefabrik est réquitisionnée par la culture.'
+              ],
+              [
+                'periode' => '2011',
+                'text' => 'Inauguration du CPCA - Centre de production et de création artistique) qui regroupe cinq institutions culturelles luxembourgeoises, dont le TROIS C-L – Centre de Création Chorégraphique Luxembourgeois.'
+              ],
+              [
+                'periode' => '2013',
+                'text' => 'L\'artiste Trixi Weiss réalise l\'installation permanente Swirling Memories.'
+              ],
+              [
+                'periode' => '2017',
+                'text' => 'Création de TOYS par la chorégraphe Léa Tirabasso.'
+              ],
+              [
+                'periode' => '2018',
+                'text' => 'Création de The Ephemeral life of an octopus par la chorégraphe Léa Tirabasso.'
+              ],
+              [
+                'periode' => 'Juillet 2020',
+                'text' => 'La chorégraphe Léa Tirabasso crée des danses inédites pour le projet Palimpsest.'
+              ]
+            ]
+          ]
+        ]
       ],
     ];
 
