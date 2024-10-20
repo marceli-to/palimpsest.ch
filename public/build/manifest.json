@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-DjKIM4dU.css",
+    "file": "assets/app-CmPYXrad.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -13,9 +13,12 @@
     "src": "resources/css/fonts/AtlasGrotesk-Medium-Web.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-MratX3S_.js",
+    "file": "assets/app-CXckVEhq.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/app-BM0-tcIW.css"
+    ]
   }
 }

@@ -6,7 +6,7 @@ export default defineConfig({
   resolve: {
     alias: {
       img: resolve('resources/img'),
-      fonts: resolve('resources/css/fonts')
+      fonts: resolve('resources/css/fonts'),
     }
   },
   plugins: [

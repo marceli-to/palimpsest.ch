@@ -1,5 +1,7 @@
 @props(['location'])
-<div data-index="{{ $location->slug }}" class="accordion relative border-b border-coral">
+<div 
+  data-index="{{ $location->slug }}" 
+  class="accordion relative border-b border-coral">
   <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === '{{ $location->slug }}' ? null : '{{ $location->slug }}'">
     <div class="flex items-center justify-between px-16 lg:px-0">
       <h2>{{ $location->title }}</h2>

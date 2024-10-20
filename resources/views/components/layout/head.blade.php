@@ -1,7 +1,7 @@
 <!doctype html>
 <html 
   lang="{{ locale() }}" 
-  class="scroll-smooth sm:!overflow-y-scroll" 
+  class="scroll-smooth overflow-y-auto" 
   x-data="{ show_menu: false, is_pages: {{ Request::routeIs('*.page.place') ? 'true' : 'false' }} }">
 <head>
 <meta charset="utf-8">
@@ -28,4 +28,19 @@
 <meta name="apple-mobile-web-app-title" content="{{ __(env('APP_NAME')) }}" />
 <link rel="manifest" href="/site.webmanifest" />
 @vite('resources/css/app.css')
+<noscript>
+  <style>
+    .simplebar-content-wrapper {
+      scrollbar-width: auto;
+      -ms-overflow-style: auto;
+    }
+    .simplebar-content-wrapper::-webkit-scrollbar,
+    .simplebar-hide-scrollbar::-webkit-scrollbar {
+      display: initial;
+      width: initial;
+      height: initial;
+    }
+  </style>
+</noscript>
 </head>
+

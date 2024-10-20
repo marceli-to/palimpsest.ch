@@ -8,15 +8,16 @@
   display: none;
 }
 
-/* Overflow handling for mobile devices */
-html.has_menu {
+/* Overflow handling for mobile devices
+html.xhas_menu {
   @apply !overflow-y-hidden md:!overflow-y-scroll;
 }
 
-html.has_menu main,
-html.has_menu footer {
+html.xhas_menu main,
+html.xhas_menu footer {
   @apply !hidden;
 }
+*/
 
 
 .accordion-transition {
