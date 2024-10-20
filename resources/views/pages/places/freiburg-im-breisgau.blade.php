@@ -1,6 +1,4 @@
 @extends('app')
 @section('content')
-<x-misc.place>
-  <h2>Freiburg im Breisgau</h2>
-</x-misc.place>
+<x-misc.place slug="freiburg-im-breisgau" />
 @endsection

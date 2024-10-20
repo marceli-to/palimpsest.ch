@@ -1,5 +1,4 @@
 @extends('app')
 @section('content')
-<x-misc.place>
-<h2>Lausanne</h2>
+<x-misc.place slug="lausanne" />
 @endsection

@@ -1,3 +1,6 @@
+@php 
+use App\Models\Place; 
+@endphp
 @props(['href', 'title' => null])
 <li>
   <a 
@@ -16,13 +19,13 @@
       class="mt-16 lg:my-12 ml-2 lg:ml-4 flex flex-col gap-y-8 lg:gap-y-4"
       x-cloak 
       x-show="is_pages">
-      @foreach (config('places') as $slug => $place)
+      @foreach (Place::published()->get() as $place)
         <li>
           <a 
-            href="{{ localized_route('page.place', $slug) }}" 
-            title="{{ __($place) }}"
+            href="{{ localized_route('page.place', $place->slug) }}" 
+            title="{{ __($place->name) }}"
             class="block text-lg lg:text-4xl">
-            {{ __($place) }}
+            {{ __($place->name) }}
           </a>
         </li>
       @endforeach
