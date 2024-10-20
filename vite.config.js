@@ -32,7 +32,7 @@ export default defineConfig({
         'resources/css/app.css',
         'resources/css/map.css',
         'resources/js/app.js',
-        'resources/js/map.js',
+        'resources/js/place.js',
       ],
       refresh: true,
     }),

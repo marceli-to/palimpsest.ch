@@ -18,9 +18,12 @@ html.has_menu footer {
   @apply !hidden;
 }
 
+/* Accordion */
+[data-accordion-button].is-active svg {
+  @apply -rotate-45;
+}
 
-
-.accordion-transition {
+[data-accordion-content] {
   transition: max-height .2s ease-out, opacity .1s .1s ease-out;
   will-change: max-height, opacity;
 }

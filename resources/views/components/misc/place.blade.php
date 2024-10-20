@@ -13,20 +13,17 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
     </a>
     <h2>{{ $place->name }}</h2>
   </div>
-  <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
-    <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+  <div class="grid grid-cols-12 gap-24 mt-24">
+    <div class="pr-8 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
       @foreach ($place->locations as $location)
         <x-accordion.wrapper :location="$location" />
       @endforeach
     </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
-      {{-- @foreach ($place->locations as $location)
-        <button @click="selected = selected === '{{ $location->slug }}' ? null : '{{ $location->slug }}'">{{ $location->title }}</button>
-      @endforeach --}}
       <div 
         id="map" 
         class="w-full min-h-[300px]"
-        data-map-zoom="12"
+        data-map-zoom="10"
         data-map-locations='[
           @foreach ($place->locations as $location)
             {

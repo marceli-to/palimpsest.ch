@@ -30,7 +30,7 @@
 <link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff2" as="font" type="font/woff2" crossorigin>
 @vite('resources/css/app.css')
 @vite('resources/css/map.css')
-@vite('resources/js/map.js')
+@vite('resources/js/place.js')
 <noscript>
   <style>
     .simplebar-content-wrapper {

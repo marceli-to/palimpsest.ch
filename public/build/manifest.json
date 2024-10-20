@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app.TwDcp6Vu.css",
+    "file": "assets/app.CVJ4gBOe.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -13,9 +13,17 @@
     "src": "resources/css/fonts/AtlasGrotesk-Medium-Web.woff2"
   },
   "resources/css/map.css": {
-    "file": "assets/map.DCOSfy3p.css",
+    "file": "assets/map.Bmd8DMoW.css",
     "src": "resources/css/map.css",
     "isEntry": true
+  },
+  "resources/img/marker-active.svg": {
+    "file": "assets/marker-active.CPFPz_ZR.svg",
+    "src": "resources/img/marker-active.svg"
+  },
+  "resources/img/marker.svg": {
+    "file": "assets/marker.CFbfUqiR.svg",
+    "src": "resources/img/marker.svg"
   },
   "resources/js/app.js": {
     "file": "assets/app.DNGSd9wp.js",
@@ -26,10 +34,10 @@
       "assets/app.BM0-tcIW.css"
     ]
   },
-  "resources/js/map.js": {
-    "file": "assets/map.DTUZJCN5.js",
-    "name": "map",
-    "src": "resources/js/map.js",
+  "resources/js/place.js": {
+    "file": "assets/place.BdBHj0eo.js",
+    "name": "place",
+    "src": "resources/js/place.js",
     "isEntry": true
   }
 }

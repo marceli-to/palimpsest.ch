@@ -1,11 +1,8 @@
 @props(['location'])
 <div 
-  x-ref="container{{ $location->slug }}" 
-  x-bind:style="selected === '{{ $location->slug }}' ? 'max-height: ' + $refs.container{{ $location->slug }}.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
-  x-bind:class="{ 'is-active': selected === '{{ $location->slug }}' }"
-  class="accordion-transition relative overflow-hidden opacity-0"
+  class="relative overflow-hidden opacity-0"
   style="max-height: 0px;"
-  x-cloak>
+  data-accordion-content>
   <div class="py-10">
     <div>
       <p>{{ $location->subtitle }}</p>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #ef6344;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 2.3px;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Ebene_1">
+      <g>
+        <g>
+          <circle class="cls-4" cx="19" cy="19" r="19"/>
+          <circle class="cls-3" cx="19" cy="19" r="18"/>
+        </g>
+        <g>
+          <circle class="cls-1" cx="19" cy="19" r="10"/>
+          <circle class="cls-2" cx="19" cy="19" r="9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
