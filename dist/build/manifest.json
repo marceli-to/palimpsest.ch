@@ -1,0 +1,24 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CmPYXrad.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/fonts/AtlasGrotesk-Medium-Web.woff": {
+    "file": "assets/AtlasGrotesk-Medium-Web-B7W9l0m_.woff",
+    "src": "resources/css/fonts/AtlasGrotesk-Medium-Web.woff"
+  },
+  "resources/css/fonts/AtlasGrotesk-Medium-Web.woff2": {
+    "file": "assets/AtlasGrotesk-Medium-Web-C8g5fTuI.woff2",
+    "src": "resources/css/fonts/AtlasGrotesk-Medium-Web.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CXckVEhq.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-BM0-tcIW.css"
+    ]
+  }
+}

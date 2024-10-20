@@ -1,0 +1,611 @@
+<!doctype html>
+<html 
+  lang="fr" 
+  class="scroll-smooth overflow-y-auto" 
+  x-data="{ show_menu: false, is_pages: true }">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palimpsest – Parcours sonore – Cie Nicole Seiler</title>
+<meta name="description" content="Regard chorégraphique sur l’histoire des lieux">
+<meta property="og:title" content="Palimpsest – Audiowalk – Cie Nicole Seiler">
+<meta property="og:description" content="Regard chorégraphique sur l’histoire des lieux">
+<meta property="og:url" content="https://palimpsest.ch.test/lieux/zurich">
+<meta property="og:site_name" content="Palimpsest – Parcours sonore – Cie Nicole Seiler">
+<meta property="og:image" content="https://palimpsest.ch.test/opengraph-fr.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Regard chorégraphique sur l’histoire des lieux">
+<meta name="twitter:title" content="Palimpsest – Parcours sonore – Cie Nicole Seiler">
+<meta property="twitter:image" content="https://palimpsest.ch.test/opengraph-fr.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="csrf-token" content="05MPU0VONs2UDM5VJzktUVSWShb8kJLY4EPunU91">
+<link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Palimpsest – Parcours sonore – Cie Nicole Seiler" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="module" src="https://palimpsest.ch.test:5173/@vite/client"></script><link rel="stylesheet" href="https://palimpsest.ch.test:5173/resources/css/app.css" /><noscript>
+  <style>
+    .simplebar-content-wrapper {
+      scrollbar-width: auto;
+      -ms-overflow-style: auto;
+    }
+    .simplebar-content-wrapper::-webkit-scrollbar,
+    .simplebar-hide-scrollbar::-webkit-scrollbar {
+      display: initial;
+      width: initial;
+      height: initial;
+    }
+  </style>
+</noscript>
+</head>
+
+<body class="bg-royal antialiased font-medium leading-[1.125] lg:leading-[1.2] mx-auto flex flex-col min-h-dvh lg:min-h-screen">
+  
+  <header class="bg-royal border-b lg:border-b-2 border-b-white h-78 lg:h-114 sticky z-40 top-0 w-full text-white">
+  <div class="max-w-page mx-auto px-16 lg:px-32 relative w-full flex justify-between">
+  <a 
+  href="javascript:;" 
+  x-on:click="show_menu = ! show_menu; " 
+  title="Menü anzeigen"
+  class="absolute left-16 top-17 lg:left-0 lg:top-34 lg:relative flex justify-center w-32 lg:w-46">
+  <span x-show="show_menu === false">
+    <svg width="46" height="30" viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-32 lg:w-46 h-auto mt-2">
+  <path d="M0 1.5H46" stroke="white" stroke-width="3"/>
+  <path d="M0 15.5H46" stroke="white" stroke-width="3"/>
+  <path d="M0 28.5H46" stroke="white" stroke-width="3"/>
+</svg>  </span>
+  <span x-cloak x-show="show_menu === true">
+    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-26 lg:w-40 h-auto">
+  <path d="M0.707031 0.719971L26.285 26.298" stroke="white" stroke-width="2"/>
+  <path d="M0.707031 25.351L26.285 0.719971" stroke="white" stroke-width="2"/>
+</svg>
+
+    </span>
+</a>
+
+<div 
+  class="bg-royal fixed z-50 left-0 top-78 lg:top-114 pl-16 lg:px-0 flex flex-col justify-between w-full"
+  x-cloak 
+  x-show="show_menu">
+  <div class="pb-16 lg:pb-0 h-dvh lg:h-screen max-h-[calc(100dvh_-_78px)] lg:max-h-[calc(100dvh_-_114px)] overflow-y-auto" data-simplebar>
+    <nav class="w-full py-18 lg:py-48 lg:px-32 max-w-page mx-auto">
+      <ul class="flex flex-col gap-y-16 lg:gap-y-8">
+        <li>
+  <a 
+          href="https://palimpsest.ch.test/a-propos"
+        title="À propos"
+    class="text-4xl lg:text-5xl">
+    À propos
+  </a>
+  </li>        <li>
+  <a 
+          href="javascript:;"
+      x-on:click="is_pages = ! is_pages"
+        title="Lieux"
+    class="text-4xl lg:text-5xl">
+    Lieux
+  </a>
+      <ul 
+      class="mt-16 lg:my-12 ml-2 lg:ml-4 flex flex-col gap-y-8 lg:gap-y-4"
+      x-cloak 
+      x-show="is_pages">
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/freiburg-im-breisgau" 
+            title="Freiburg im Breisgau"
+            class="block text-lg lg:text-4xl">
+            Freiburg im Breisgau
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/zurich" 
+            title="Zürich"
+            class="block text-lg lg:text-4xl">
+            Zürich
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/bern" 
+            title="Bern"
+            class="block text-lg lg:text-4xl">
+            Bern
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/geneve" 
+            title="Genève"
+            class="block text-lg lg:text-4xl">
+            Genève
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/gland" 
+            title="Gland"
+            class="block text-lg lg:text-4xl">
+            Gland
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/givrins" 
+            title="Givrins"
+            class="block text-lg lg:text-4xl">
+            Givrins
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/nyon" 
+            title="Nyon"
+            class="block text-lg lg:text-4xl">
+            Nyon
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/bellinzona" 
+            title="Bellinzona"
+            class="block text-lg lg:text-4xl">
+            Bellinzona
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/lausanne" 
+            title="Lausanne"
+            class="block text-lg lg:text-4xl">
+            Lausanne
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/sierre" 
+            title="Sierre"
+            class="block text-lg lg:text-4xl">
+            Sierre
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/zug" 
+            title="Zug"
+            class="block text-lg lg:text-4xl">
+            Zug
+          </a>
+        </li>
+              <li>
+          <a 
+            href="https://palimpsest.ch.test/lieux/luxembourg" 
+            title="Luxembourg"
+            class="block text-lg lg:text-4xl">
+            Luxembourg
+          </a>
+        </li>
+          </ul>
+  </li>        <li>
+  <a 
+          href="https://palimpsest.ch.test/galerie-d-images"
+        title="Galerie"
+    class="text-4xl lg:text-5xl">
+    Galerie
+  </a>
+  </li>      </ul> 
+    </nav>
+    <nav class="lg:hidden">
+  <ul class="flex gap-x-24 lg:gap-x-20 [&_a]:text-lg [&_a.is-active]:underline [&_a]:decoration-1 [&_a]:underline-offset-2">
+    <li>
+      <a 
+        href="https://palimpsest.ch.test/lieux/zurich"
+        class="is-active">fr</a>
+    </li>
+    <li>
+      <a 
+        href="https://palimpsest.ch.test/de/orte/zurich"
+        class="hover:underline">de</a>
+    </li>
+    <li>
+      <a 
+        href="https://palimpsest.ch.test/en/places/zurich"
+        class="hover:underline">en</a>
+    </li>
+  </ul>
+</nav>  </div>
+</div>
+
+    <div class="w-full lg:w-auto flex flex-col items-center justify-center leading-none mt-16 lg:mt-18">
+  <a href="/">
+    <h1 class="text-xl lg:text-4xl mb-4 lg:mb-8 text-center">Palimpsest</h1>
+    <span class="text-xs lg:text-lg">Audiowalk — Cie Nicole Seiler</span>
+  </a>
+</div>    <nav class="hidden lg:block lg:mt-34">
+  <ul class="flex gap-x-24 lg:gap-x-20 [&_a]:text-lg [&_a.is-active]:underline [&_a]:decoration-1 [&_a]:underline-offset-2">
+    <li>
+      <a 
+        href="https://palimpsest.ch.test/lieux/zurich"
+        class="is-active">fr</a>
+    </li>
+    <li>
+      <a 
+        href="https://palimpsest.ch.test/de/orte/zurich"
+        class="hover:underline">de</a>
+    </li>
+    <li>
+      <a 
+        href="https://palimpsest.ch.test/en/places/zurich"
+        class="hover:underline">en</a>
+    </li>
+  </ul>
+</nav>
+</div></header>
+  <main role="main" class="bg-white flex-1 relative z-10">
+  <div class="max-w-page mx-auto px-16 lg:px-32 !px-0 lg:!px-32">
+  <div class="px-16 lg:px-0">
+    <a 
+      href="javascript:;" 
+      x-on:click="show_menu = true; ;" 
+      class="text-4xl">
+      X
+    </a>
+    <h2>Zürich</h2>
+  </div>
+  <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
+    <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+              <div 
+  data-index="tanzhaus" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'tanzhaus' ? null : 'tanzhaus'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Tanzhaus</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'tanzhaus'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertanzhaus" 
+  x-bind:style="selected === 'tanzhaus' ? 'max-height: ' + $refs.containertanzhaus.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'tanzhaus' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Auf dem Lettenviadukt</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1783</td>
+                <td>Bau der Kattundruckerei von Hans Jakob Hofmeister am Limmatufer. Sie war bis 1867 in Betrieb.</td>
+              </tr>
+                          <tr>
+                <td>1879</td>
+                <td>Erstellung des Wasserwerk Letten, das ab 1892 der Elektrizitätsherstellung dient.</td>
+              </tr>
+                          <tr>
+                <td>ab 1881</td>
+                <td>Gründung der STF (Schweizerische Textilfachschule). Die ehemaligen Gebäude der Hofmeisterischen Kattundruckerei beherbergen die Seidenwebschule, später Textilfachschule.</td>
+              </tr>
+                          <tr>
+                <td>1894</td>
+                <td>Eröffnung des Aussersihler Viadukts. Es besteht aus dem höheren Wipkinger Viadukt, der RIchtung Bahnhof Wipkingen führt und dem niedrigeren und heute stillgelegten Lettenviadukt, der zum ehemaligen Bahnhof Letten führt.</td>
+              </tr>
+                          <tr>
+                <td>1909</td>
+                <td>Bau des Flussbades Unterer Letten, das älteste Flussbad der Stadt Zürich. Seit 1986 ist es denkmalgeschützt.</td>
+              </tr>
+                          <tr>
+                <td>1945</td>
+                <td>Die Halle Wasserwerkstrasse 127a wurde als Maschinenhalle und als bauliche Erweiterung der Textilfachschule erbaut.</td>
+              </tr>
+                          <tr>
+                <td>1996</td>
+                <td>Das Tanzhaus Zürich wird an der Wasserwerkstrasse 127a eingeweiht.</td>
+              </tr>
+                          <tr>
+                <td>2006 – 2007</td>
+                <td>Renovation und Umbau des Gebäudes an der Wasserwerkstrasse 129 durch das Architektenbüro Gramazio &amp; Kohler. Die neue Bühne (heute Bühne 2) im obersten Stock wurde im Frühjahr 2007 eingeweiht.</td>
+              </tr>
+                          <tr>
+                <td>2. und 3. August 2009</td>
+                <td>Uraufführung der Performance « freie Enden » von Katja Schenker im Rahmen des Stromereien Festivals im Flussbad Unterer Letten.</td>
+              </tr>
+                          <tr>
+                <td>13. Oktober 2012</td>
+                <td>Das Tanzhaus (Gebäude an der Wasserwerkstrasse 127a) wird durch einen Mottbrand vollkommen zerstört.</td>
+              </tr>
+                          <tr>
+                <td>2013 – 2016</td>
+                <td>Aufstockung des Getreidesilos von Swissmill von 40 auf 118 Meter Höhe. Es ist damit der höchste Kornspeicher der Welt. Es fasst bis zu 60&#039;000 Tonnen Getreide.</td>
+              </tr>
+                          <tr>
+                <td>8. April 2019</td>
+                <td>Gastspiel des Stücks «ACT2 – to resist» von der uruguayischen Choreografin Tamara Cubas im Rahmen des Festivals Zürich moves!</td>
+              </tr>
+                          <tr>
+                <td>6. September 2019</td>
+                <td>Einweihung des Ersatzneubaus des Tanzhauses (Bau durch das Architekturbüro Barozzi/Veiga). Das neue Gebäude erhält schnell den Spitznamen «Tobleronehaus».</td>
+              </tr>
+                          <tr>
+                <td>22. Juni 2020</td>
+                <td>Night of light. Über 1000 schweizer Kulturinstitutionen leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.</td>
+              </tr>
+                          <tr>
+                <td>16. April 2021</td>
+                <td>Geisterpremiere des Reinactments von « The Best and The Worst of Us » der Choreografin Simone Aughterlony. Die öffentlichen Vorstellungen wurden auf Grund der Covid-19 Pandemie verschoben. Das Stück wurde 2008 uraufgeführt und in Zusammenarbeit mit der Tanzkompany The Field 2021 wieder neu aufgenommen.</td>
+              </tr>
+                          <tr>
+                <td>April 2021</td>
+                <td>Die Tänzerin Maria Demandt kreiert verschiedene Tänze für das Projekt Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
+              <div 
+  data-index="tanzhaus_2" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'tanzhaus_2' ? null : 'tanzhaus_2'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Tanzhaus 2</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'tanzhaus_2'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertanzhaus_2" 
+  x-bind:style="selected === 'tanzhaus_2' ? 'max-height: ' + $refs.containertanzhaus_2.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'tanzhaus_2' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Auf dem Lettenviadukt</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1783</td>
+                <td>Bau der Kattundruckerei von Hans Jakob Hofmeister am Limmatufer. Sie war bis 1867 in Betrieb.</td>
+              </tr>
+                          <tr>
+                <td>1879</td>
+                <td>Erstellung des Wasserwerk Letten, das ab 1892 der Elektrizitätsherstellung dient.</td>
+              </tr>
+                          <tr>
+                <td>ab 1881</td>
+                <td>Gründung der STF (Schweizerische Textilfachschule). Die ehemaligen Gebäude der Hofmeisterischen Kattundruckerei beherbergen die Seidenwebschule, später Textilfachschule.</td>
+              </tr>
+                          <tr>
+                <td>1894</td>
+                <td>Eröffnung des Aussersihler Viadukts. Es besteht aus dem höheren Wipkinger Viadukt, der RIchtung Bahnhof Wipkingen führt und dem niedrigeren und heute stillgelegten Lettenviadukt, der zum ehemaligen Bahnhof Letten führt.</td>
+              </tr>
+                          <tr>
+                <td>1909</td>
+                <td>Bau des Flussbades Unterer Letten, das älteste Flussbad der Stadt Zürich. Seit 1986 ist es denkmalgeschützt.</td>
+              </tr>
+                          <tr>
+                <td>1945</td>
+                <td>Die Halle Wasserwerkstrasse 127a wurde als Maschinenhalle und als bauliche Erweiterung der Textilfachschule erbaut.</td>
+              </tr>
+                          <tr>
+                <td>1996</td>
+                <td>Das Tanzhaus Zürich wird an der Wasserwerkstrasse 127a eingeweiht.</td>
+              </tr>
+                          <tr>
+                <td>2006 – 2007</td>
+                <td>Renovation und Umbau des Gebäudes an der Wasserwerkstrasse 129 durch das Architektenbüro Gramazio &amp; Kohler. Die neue Bühne (heute Bühne 2) im obersten Stock wurde im Frühjahr 2007 eingeweiht.</td>
+              </tr>
+                          <tr>
+                <td>2. und 3. August 2009</td>
+                <td>Uraufführung der Performance « freie Enden » von Katja Schenker im Rahmen des Stromereien Festivals im Flussbad Unterer Letten.</td>
+              </tr>
+                          <tr>
+                <td>13. Oktober 2012</td>
+                <td>Das Tanzhaus (Gebäude an der Wasserwerkstrasse 127a) wird durch einen Mottbrand vollkommen zerstört.</td>
+              </tr>
+                          <tr>
+                <td>2013 – 2016</td>
+                <td>Aufstockung des Getreidesilos von Swissmill von 40 auf 118 Meter Höhe. Es ist damit der höchste Kornspeicher der Welt. Es fasst bis zu 60&#039;000 Tonnen Getreide.</td>
+              </tr>
+                          <tr>
+                <td>8. April 2019</td>
+                <td>Gastspiel des Stücks «ACT2 – to resist» von der uruguayischen Choreografin Tamara Cubas im Rahmen des Festivals Zürich moves!</td>
+              </tr>
+                          <tr>
+                <td>6. September 2019</td>
+                <td>Einweihung des Ersatzneubaus des Tanzhauses (Bau durch das Architekturbüro Barozzi/Veiga). Das neue Gebäude erhält schnell den Spitznamen «Tobleronehaus».</td>
+              </tr>
+                          <tr>
+                <td>22. Juni 2020</td>
+                <td>Night of light. Über 1000 schweizer Kulturinstitutionen leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.</td>
+              </tr>
+                          <tr>
+                <td>16. April 2021</td>
+                <td>Geisterpremiere des Reinactments von « The Best and The Worst of Us » der Choreografin Simone Aughterlony. Die öffentlichen Vorstellungen wurden auf Grund der Covid-19 Pandemie verschoben. Das Stück wurde 2008 uraufgeführt und in Zusammenarbeit mit der Tanzkompany The Field 2021 wieder neu aufgenommen.</td>
+              </tr>
+                          <tr>
+                <td>April 2021</td>
+                <td>Die Tänzerin Maria Demandt kreiert verschiedene Tänze für das Projekt Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
+              <div 
+  data-index="tanzhaus_3" 
+  class="accordion relative border-b border-coral">
+  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'tanzhaus_3' ? null : 'tanzhaus_3'">
+    <div class="flex items-center justify-between px-16 lg:px-0">
+      <h2>Tanzhaus 3</h2>
+      <svg 
+        width="40" 
+        height="40" 
+        viewBox="0 0 40 40" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'tanzhaus_3'}">
+        <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
+        <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
+      </svg>
+    </div>
+  </button>
+  <div 
+  x-ref="containertanzhaus_3" 
+  x-bind:style="selected === 'tanzhaus_3' ? 'max-height: ' + $refs.containertanzhaus_3.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
+  x-bind:class="{ 'is-active': selected === 'tanzhaus_3' }"
+  class="accordion-transition relative overflow-hidden opacity-0"
+  style="max-height: 0px;"
+  x-cloak>
+  <div class="py-10">
+    <div>
+      <p>Auf dem Lettenviadukt</p>
+              <table>
+          <tbody>
+                          <tr>
+                <td>1783</td>
+                <td>Bau der Kattundruckerei von Hans Jakob Hofmeister am Limmatufer. Sie war bis 1867 in Betrieb.</td>
+              </tr>
+                          <tr>
+                <td>1879</td>
+                <td>Erstellung des Wasserwerk Letten, das ab 1892 der Elektrizitätsherstellung dient.</td>
+              </tr>
+                          <tr>
+                <td>ab 1881</td>
+                <td>Gründung der STF (Schweizerische Textilfachschule). Die ehemaligen Gebäude der Hofmeisterischen Kattundruckerei beherbergen die Seidenwebschule, später Textilfachschule.</td>
+              </tr>
+                          <tr>
+                <td>1894</td>
+                <td>Eröffnung des Aussersihler Viadukts. Es besteht aus dem höheren Wipkinger Viadukt, der RIchtung Bahnhof Wipkingen führt und dem niedrigeren und heute stillgelegten Lettenviadukt, der zum ehemaligen Bahnhof Letten führt.</td>
+              </tr>
+                          <tr>
+                <td>1909</td>
+                <td>Bau des Flussbades Unterer Letten, das älteste Flussbad der Stadt Zürich. Seit 1986 ist es denkmalgeschützt.</td>
+              </tr>
+                          <tr>
+                <td>1945</td>
+                <td>Die Halle Wasserwerkstrasse 127a wurde als Maschinenhalle und als bauliche Erweiterung der Textilfachschule erbaut.</td>
+              </tr>
+                          <tr>
+                <td>1996</td>
+                <td>Das Tanzhaus Zürich wird an der Wasserwerkstrasse 127a eingeweiht.</td>
+              </tr>
+                          <tr>
+                <td>2006 – 2007</td>
+                <td>Renovation und Umbau des Gebäudes an der Wasserwerkstrasse 129 durch das Architektenbüro Gramazio &amp; Kohler. Die neue Bühne (heute Bühne 2) im obersten Stock wurde im Frühjahr 2007 eingeweiht.</td>
+              </tr>
+                          <tr>
+                <td>2. und 3. August 2009</td>
+                <td>Uraufführung der Performance « freie Enden » von Katja Schenker im Rahmen des Stromereien Festivals im Flussbad Unterer Letten.</td>
+              </tr>
+                          <tr>
+                <td>13. Oktober 2012</td>
+                <td>Das Tanzhaus (Gebäude an der Wasserwerkstrasse 127a) wird durch einen Mottbrand vollkommen zerstört.</td>
+              </tr>
+                          <tr>
+                <td>2013 – 2016</td>
+                <td>Aufstockung des Getreidesilos von Swissmill von 40 auf 118 Meter Höhe. Es ist damit der höchste Kornspeicher der Welt. Es fasst bis zu 60&#039;000 Tonnen Getreide.</td>
+              </tr>
+                          <tr>
+                <td>8. April 2019</td>
+                <td>Gastspiel des Stücks «ACT2 – to resist» von der uruguayischen Choreografin Tamara Cubas im Rahmen des Festivals Zürich moves!</td>
+              </tr>
+                          <tr>
+                <td>6. September 2019</td>
+                <td>Einweihung des Ersatzneubaus des Tanzhauses (Bau durch das Architekturbüro Barozzi/Veiga). Das neue Gebäude erhält schnell den Spitznamen «Tobleronehaus».</td>
+              </tr>
+                          <tr>
+                <td>22. Juni 2020</td>
+                <td>Night of light. Über 1000 schweizer Kulturinstitutionen leuchten rot. Mit dieser Aktion wurde auf die prekäre Situation des Kultursektors in Bezug auf die Covid-19 Pandemie aufmerksam gemacht.</td>
+              </tr>
+                          <tr>
+                <td>16. April 2021</td>
+                <td>Geisterpremiere des Reinactments von « The Best and The Worst of Us » der Choreografin Simone Aughterlony. Die öffentlichen Vorstellungen wurden auf Grund der Covid-19 Pandemie verschoben. Das Stück wurde 2008 uraufgeführt und in Zusammenarbeit mit der Tanzkompany The Field 2021 wieder neu aufgenommen.</td>
+              </tr>
+                          <tr>
+                <td>April 2021</td>
+                <td>Die Tänzerin Maria Demandt kreiert verschiedene Tänze für das Projekt Palimpsest.</td>
+              </tr>
+                      </tbody>
+        </table>
+          </div>
+  </div>
+</div></div>
+          </div>
+    <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
+              <button @click="selected = selected === 'tanzhaus' ? null : 'tanzhaus'">Tanzhaus</button>
+              <button @click="selected = selected === 'tanzhaus_2' ? null : 'tanzhaus_2'">Tanzhaus 2</button>
+              <button @click="selected = selected === 'tanzhaus_3' ? null : 'tanzhaus_3'">Tanzhaus 3</button>
+          </div>
+  </div>
+</div>
+</main>  <footer class="border-t lg:border-t-2 border-t-white text-white text-sm lg:text-lg pt-24 pb-16 lg:py-32">
+  <div class="max-w-page mx-auto px-16 lg:px-32">
+  <address class="not-italic">
+      Cie Nicole Seiler<br>Rue du Valentin 34 et demi<br>CH–1004 Lausanne
+    </address>
+    <div class="flex flex-col gap-y-16 sm:flex-row sm:justify-between mt-16">
+      <div>
+        <a 
+          href="mailto:info@nicoleseiler.com"
+          title="E-Mail Nicole Seiler"
+          class="block hover:text-coral transition-colors"
+          target="_blank">
+          info@nicoleseiler.com
+        </a>
+        <a 
+          href="https://www.nicoleseiler.com" 
+          title="Site web Nicole Seiler"
+          class="block hover:text-coral transition-colors"
+          target="_blank">
+          www.nicoleseiler.com
+        </a>
+      </div>
+      <nav>
+  <ul>
+    <li class="sm:text-right">
+      <a 
+        href="https://palimpsest.ch.test/mentions-l%C3%A9gales"
+        title="Mentions légales"
+        class="hover:text-coral transition-colors">
+        Mentions légales
+      </a>
+    </li>
+    <li class="sm:text-right">
+      <a 
+        href="https://palimpsest.ch.test/politique-de-confidentialite"
+        title="Politique de confidentialité"
+        class="hover:text-coral transition-colors">
+        Politique de confidentialité
+      </a>
+    </li>
+  </ul>
+</nav>    </div>
+</div></footer>
+  <script type="module" src="https://palimpsest.ch.test:5173/@vite/client"></script><script type="module" src="https://palimpsest.ch.test:5173/resources/js/app.js"></script></body>
+</html>
+<!-- made with ❤ by bivgrafik.ch & marceli.to -->
