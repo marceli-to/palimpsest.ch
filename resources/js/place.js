@@ -81,7 +81,7 @@ const Places = (function() {
     });
 
     map.addControl(new mapboxgl.NavigationControl());
-    map.scrollZoom.disable();
+    //map.scrollZoom.disable();
 
     addMarkers(locations);
     fitMapToMarkers(locations);
@@ -112,7 +112,7 @@ const Places = (function() {
         map.flyTo({
           center: marker.getLngLat(),
           zoom: 15,
-          duration: 300
+          duration: 600
         });
       } 
       else {
