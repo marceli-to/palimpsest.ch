@@ -307,7 +307,50 @@ class PlaceSeeder extends Seeder
         'slug' => 'geneve', 
         'name' => 'Genève', 
         'position' => 4,
-        'published' => true
+        'published' => true,
+        'locations' => [
+          [
+            'title' => 'Le Grütli',
+            'subtitle' => 'Place Béla Bartok',
+            'audio_file' => 'geneve-le-grutli.mp3',
+            'latitude' => 46.201008,
+            'longitude' => 6.141246,
+            'facts' => [
+              [
+                'periode' => '1871 - 1873',
+                'text' => 'Construction de l\'École du Grütli sur les plans de l\'architecte Georges Matthey.'
+              ],
+              [
+                'periode' => '1873 – 1969',
+                'text' => 'L\'École du Grütli réunit des écoles primaires, l\'École de dessin et l\'École industrielle. Dès 1929 les élèves d\'école primaire n\'ayant pu accéder au Collège étaient placés dans cette école.'
+              ],
+              [
+                'periode' => '1920 - 1930',
+                'text' => 'Béla Bartok, pianiste et compositeur hongrois travaille avec Ernest Ansermet et l\'Orchestre de la suisse romande au Victoria Hall à Genève. Le préau de l\'ancienne école du Grütli est nommé d\'après lui.'
+              ],
+              [
+                'periode' => '1987 - 1989',
+                'text' => 'Transformation du bâtiment en Maison des arts du Grütli par le bureau d\'étude Jean Stryjenski et Urs Tschumi.'
+              ],
+              [
+                'periode' => '13 novembre 1988',
+                'text' => 'Inauguration de la Maison des arts du Grütli. L\'artiste Xavier Juliot installe une sculpture gonflable sur le toit pour l\'occasion.'
+              ],
+              [
+                'periode' => '1991',
+                'text' => 'Répétitions de Cantus Planus, chorégraphie de Noémie Lapzeson dans le studio de l\'adc nommé aujourd\'hui Studio Noémie Lapzeson.'
+              ],
+              [
+                'periode' => '22 juin 2020',
+                'text' => 'Night of light. En Suisse, plus de 1000 lieux culturels s\'éclairent en rouge. Cette action vise à sensibiliser la population aux difficultés rencontrées par le secteur culturel après la pandémie de SARS-CoV2 du printemps 2020.'
+              ],
+              [
+                'periode' => 'Août 2020',
+                'text' => 'La danseuse Marthe Krummenacher crée des danses inédites pour le projet Palimpsest.'
+              ]
+            ]
+          ],
+        ]
       ],
       // Gland
       [
