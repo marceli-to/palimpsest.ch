@@ -38,9 +38,11 @@ class Deploy extends Command
         if ($content !== $newContent)
         {
           file_put_contents($filePath, $newContent);
-          $this->info("Replaced '{$search}' with '{$replace}' in {$filePath}");
         }
       }
     }
+
+    $this->info("Replaced '{$search}' with '{$replace}' in the dist folder");
+
   }
 }

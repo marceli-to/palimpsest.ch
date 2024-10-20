@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-de.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="4LKjXXtQ1bulJtSerFAe5kPGamrU0fVZWCgwrDh9">
+<meta name="csrf-token" content="j4DEB14a2iZgXhNnkQkTnIJBNboBJO6cPNSIvwr3">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -28,8 +28,7 @@
 <meta name="apple-mobile-web-app-title" content="Palimpsest – Audiowalk – Cie Nicole Seiler" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff" as="font" type="font/woff" crossorigin>
-<script type="module" src="https://palimpsest.ch.marcelito.ch:5173/@vite/client"></script><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch:5173/resources/css/app.css" /><noscript>
+<link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.CVJ4gBOe.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.CVJ4gBOe.css" /><link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/map.Bmd8DMoW.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/map.Bmd8DMoW.css" /><link rel="modulepreload" href="https://palimpsest.ch.marcelito.ch/build/assets/place.BdBHj0eo.js" /><script type="module" src="https://palimpsest.ch.marcelito.ch/build/assets/place.BdBHj0eo.js"></script><noscript>
   <style>
     .simplebar-content-wrapper {
       scrollbar-width: auto;
@@ -260,12 +259,16 @@
     </a>
     <h2>Genève</h2>
   </div>
-  <div class="grid grid-cols-12 gap-24 mt-24" x-data="{ selected: null }">
-    <div class="col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+  <div class="grid grid-cols-12 gap-24 mt-24">
+    <div class="pr-8 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
               <div 
-  data-index="le_grutli" 
-  class="accordion relative border-b border-coral">
-  <button type="button" class="bg-white text-coral py-5 w-full text-left" @click="selected = selected === 'le_grutli' ? null : 'le_grutli'">
+  data-location="le_grutli" 
+  class="relative border-b border-coral"
+  data-accordion>
+  <button 
+    type="button" 
+    class="bg-white text-coral py-5 w-full text-left"
+    data-accordion-button>
     <div class="flex items-center justify-between px-16 lg:px-0">
       <h2>Le Grütli</h2>
       <svg 
@@ -274,19 +277,16 @@
         viewBox="0 0 40 40" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
-        class="transform transition-transform duration-300 ease-in-out w-24 h-24" :class="{'-rotate-45': selected === 'le_grutli'}">
+        class="transform transition-transform duration-300 ease-in-out w-24 h-24">
         <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
         <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
       </svg>
     </div>
   </button>
   <div 
-  x-ref="containerle_grutli" 
-  x-bind:style="selected === 'le_grutli' ? 'max-height: ' + $refs.containerle_grutli.scrollHeight + 'px; opacity: 1' : 'max-height: 0px; opacity: 0'"
-  x-bind:class="{ 'is-active': selected === 'le_grutli' }"
-  class="accordion-transition relative overflow-hidden opacity-0"
+  class="relative overflow-hidden opacity-0"
   style="max-height: 0px;"
-  x-cloak>
+  data-accordion-content>
   <div class="py-10">
     <div>
       <p>Place Béla Bartok</p>
@@ -331,8 +331,20 @@
 </div></div>
           </div>
     <div class="col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
-              <button @click="selected = selected === 'le_grutli' ? null : 'le_grutli'">Le Grütli</button>
-          </div>
+      <div 
+        id="map" 
+        class="w-full min-h-[300px]"
+        data-map-zoom="10"
+        data-map-locations='[
+                      {
+              "coordinates": [6.141246, 46.201008],
+              "title": "Le Grütli",
+              "slug": "le_grutli"
+            }
+            
+                  ]'>
+      </div>
+    </div>
   </div>
 </div>
 </main>  <footer class="border-t lg:border-t-2 border-t-white text-white text-sm lg:text-lg pt-24 pb-16 lg:py-32">
@@ -378,6 +390,6 @@
   </ul>
 </nav>    </div>
 </div></footer>
-  <script type="module" src="https://palimpsest.ch.marcelito.ch:5173/@vite/client"></script><script type="module" src="https://palimpsest.ch.marcelito.ch:5173/resources/js/app.js"></script></body>
+  <link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.BM0-tcIW.css" /><link rel="modulepreload" href="https://palimpsest.ch.marcelito.ch/build/assets/app.DNGSd9wp.js" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.BM0-tcIW.css" /><script type="module" src="https://palimpsest.ch.marcelito.ch/build/assets/app.DNGSd9wp.js"></script></body>
 </html>
 <!-- made with ❤ by bivgrafik.ch & marceli.to -->
