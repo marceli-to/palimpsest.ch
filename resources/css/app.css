@@ -16,7 +16,7 @@ main h2:not(:first-of-type) {
 }
 
 main p:not(:last-of-type) {
-  @apply mb-8
+  @apply mb-8 lg:mb-16;
 }
 
 

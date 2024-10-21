@@ -18,6 +18,7 @@ $images = [
 ];
 @endphp
 @extends('app')
+@section('page_title', __('A propos'))
 @section('content')
 <x-layout.inner class="text-royal py-16 lg:py-32">
   <div class="space-y-24 lg:space-y-0 lg:grid lg:grid-cols-12 lg:gap-x-20">
@@ -34,56 +35,56 @@ $images = [
       <p>{{ __('Die Stücke sind in der Originalsprache ihrer Standorte verfasst.') }}</p>
       <h2>{{ __('Credits') }}</h2>
       <div class="space-y-8 lg:space-y-16">
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Konzept:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Konzept:') }}</div>
           <div>{{ __('Nicole Seiler') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Text:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Text:') }}</div>
           <div>{{ __('Séverine Skierski') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Sound und Komposition:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Sound und Komposition:') }}</div>
           <div>{{ __('Stéphane Vecchione, Patricia Bosshard, Jérémy Conne, Maxime Steiner') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Stimme:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Stimme:') }}</div>
           <div>{{ __('Séverine Skierski, Martherita Saltamacchia, Cathrin Strömer, Stefanie Mrachacz') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Zusätzliche Choreografien:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Zusätzliche Choreografien:') }}</div>
           <div>{{ __('Simon Crettol, Maria Demandt, Katrin Kolo, Emma Murray, Marthe Krummenacher, Camilla Parini, Léa Tirabasso') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Grafik:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Grafik:') }}</div>
           <div>{{ __('Bivgrafik') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Administration:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Administration:') }}</div>
           <div>{{ __('Cie Nicole Seiler : Léonore Friedli') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Touring:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Touring:') }}</div>
           <div>{{ __('Cie Nicole Seiler : Ana Lagarrigue') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Historiker*innen:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Historiker*innen:') }}</div>
           <div>{{ __('Anne-Gaëlle Neipp, Ariane Devanthéry, Jean-Pierre Pastori, Olivier Robert, Lausanne Jardins, Véronique Rey-Vodoz, Catherine Schmutz') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Produktion:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Produktion:') }}</div>
           <div>{{ __('Cie Nicole Seiler') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Koproduktion:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Koproduktion:') }}</div>
           <div>{{ __('Théâtre de l\'Arsenic Lausanne (CH), far° Nyon (CH), Lausanne Jardins (CH)') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Unterstützung:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Unterstützung:') }}</div>
           <div>{{ __('Stadt Lausanne, Kanton Waadt, Pro Helvetia – Schweizerische Kulturstiftung, Loterie Romande, Ernst Göhner Stiftung') }}</div>
         </div>
-        <div class="lg:flex">
-          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Dank an:') }}</div>
+        <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
+          <div>{{ __('Dank an:') }}</div>
           <div>{{ __('Cie Kokodyniack') }}</div>
         </div>
       </div>

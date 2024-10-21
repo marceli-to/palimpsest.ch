@@ -64,6 +64,7 @@ $images = [
 ];
 @endphp
 @extends('app')
+@section('page_title', __('Bildgalerie'))
 @section('content')
 <x-layout.inner class="py-16 lg:py-32">
   @foreach ($images as $image)

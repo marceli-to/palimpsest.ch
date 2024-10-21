@@ -24,6 +24,10 @@ export default {
         'wide': {'raw': '(min-aspect-ratio: 16/10)'},
       },
 
+      gridTemplateColumns: {
+        'about': '220px auto',
+      },
+
       colors: {
         'royal': '#070ADB',
         'coral': '#EF6344',
