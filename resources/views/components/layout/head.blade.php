@@ -28,9 +28,6 @@
 <meta name="apple-mobile-web-app-title" content="{{ __(env('APP_NAME')) }}" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff2" as="font" type="font/woff2" crossorigin>
-@vite('resources/css/app.css')
-@vite('resources/css/map.css')
-@vite('resources/js/place.js')
 <noscript>
   <style>
     .simplebar-content-wrapper {

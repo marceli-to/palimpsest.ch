@@ -1,7 +1,12 @@
 <body class="bg-royal antialiased font-medium leading-[1.125] lg:leading-[1.2] mx-auto flex flex-col min-h-dvh lg:min-h-screen">
   {{-- <x-misc.debug /> --}}
   {{ $slot }}
-  @vite('resources/js/app.js')
+@vite('resources/js/app.js')
+@if (Request::routeIs('*page.place'))
+  @vite('resources/css/app.css')
+  @vite('resources/css/map.css')
+  @vite('resources/js/place.js')
+@endif
 </body>
 </html>
 <!-- made with ❤ by bivgrafik.ch & marceli.to -->
