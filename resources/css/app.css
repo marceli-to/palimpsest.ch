@@ -7,6 +7,19 @@
 [x-cloak] {
   display: none;
 }
+
+main h2 {
+  @apply text-lg lg:text-4xl mb-4 lg:mb-10;
+}
+main h2:not(:first-of-type) {
+  @apply mt-32 lg:mt-48;
+}
+
+main p:not(:last-of-type) {
+  @apply mb-8
+}
+
+
 /* Hide main and footer when menu is open */
 html.has_menu main,
 html.has_menu footer {
