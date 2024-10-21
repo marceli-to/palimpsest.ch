@@ -100,6 +100,8 @@ $images = [
             src="{{ asset('img/'.$image['src'].'-sm.jpg') }}" 
             alt="{{ $image['caption'] ?? '' }}" 
             class="w-full h-auto"
+            width="700"
+            height="467"
             loading="lazy">
         </picture>
       @endforeach
