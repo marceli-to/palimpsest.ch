@@ -3,7 +3,6 @@
   {{ $slot }}
 @vite('resources/js/app.js')
 @if (Request::routeIs('*page.place'))
-  @vite('resources/css/app.css')
   @vite('resources/css/map.css')
   @vite('resources/js/place.js')
 @endif
