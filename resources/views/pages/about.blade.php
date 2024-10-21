@@ -1,7 +1,26 @@
+@php
+$images = [
+  [
+    'src' => 'palimpsest-nicole-seiler-about-01',
+    'caption' => 'Caption',
+    'format' => 'landscape'
+  ],
+  [
+    'src' => 'palimpsest-nicole-seiler-about-02',
+    'caption' => 'Caption',
+    'format' => 'landscape'
+  ],
+  [
+    'src' => 'palimpsest-nicole-seiler-about-03',
+    'caption' => 'Caption',
+    'format' => 'landscape'
+  ],
+];
+@endphp
 @extends('app')
 @section('content')
 <x-layout.inner class="text-royal py-16 lg:py-32">
-  <div class="lg:grid lg:grid-cols-12 lg:gap-x-20">
+  <div class="space-y-24 lg:space-y-0 lg:grid lg:grid-cols-12 lg:gap-x-20">
     <div class="lg:col-span-6">
       <h2>{{ __('Was ist Palimpsest?') }}</h2>
       <p>{{ __('Palimpsest ist Tanz fürs Ohr, eine Sammlung von Hörstücken.') }}</p>    
@@ -14,62 +33,76 @@
       <h2>{{ __('Sprache') }}</h2>
       <p>{{ __('Die Stücke sind in der Originalsprache ihrer Standorte verfasst.') }}</p>
       <h2>{{ __('Credits') }}</h2>
-
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Konzept:') }}</div>
-        <div>{{ __('Nicole Seiler') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Text:') }}</div>
-        <div>{{ __('Séverine Skierski') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Sound und Komposition:') }}</div>
-        <div>{{ __('Stéphane Vecchione, Patricia Bosshard, Jérémy Conne, Maxime Steiner') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Stimme:') }}</div>
-        <div>{{ __('Séverine Skierski, Martherita Saltamacchia, Cathrin Strömer, Stefanie Mrachacz') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Zusätzliche Choreografien:') }}</div>
-        <div>{{ __('Simon Crettol, Maria Demandt, Katrin Kolo, Emma Murray, Marthe Krummenacher, Camilla Parini, Léa Tirabasso') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Grafik:') }}</div>
-        <div>{{ __('Bivgrafik') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Administration:') }}</div>
-        <div>{{ __('Cie Nicole Seiler : Léonore Friedli') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Touring:') }}</div>
-        <div>{{ __('Cie Nicole Seiler : Ana Lagarrigue') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Historiker*innen:') }}</div>
-        <div>{{ __('Anne-Gaëlle Neipp, Ariane Devanthéry, Jean-Pierre Pastori, Olivier Robert, Lausanne Jardins, Véronique Rey-Vodoz, Catherine Schmutz') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Produktion:') }}</div>
-        <div>{{ __('Cie Nicole Seiler') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Koproduktion:') }}</div>
-        <div>{{ __('Théâtre de l\'Arsenic Lausanne (CH), far° Nyon (CH), Lausanne Jardins (CH)') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Unterstützung:') }}</div>
-        <div>{{ __('Stadt Lausanne, Kanton Waadt, Pro Helvetia – Schweizerische Kulturstiftung, Loterie Romande, Ernst Göhner Stiftung') }}</div>
-      </div>
-      <div class="mb-8 lg:mb-16 lg:flex">
-        <div class="lg:min-w-[220px] lg:pr-10">{{ __('Dank an:') }}</div>
-        <div>{{ __('Cie Kokodyniack') }}</div>
+      <div class="space-y-8 lg:space-y-16">
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Konzept:') }}</div>
+          <div>{{ __('Nicole Seiler') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Text:') }}</div>
+          <div>{{ __('Séverine Skierski') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Sound und Komposition:') }}</div>
+          <div>{{ __('Stéphane Vecchione, Patricia Bosshard, Jérémy Conne, Maxime Steiner') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Stimme:') }}</div>
+          <div>{{ __('Séverine Skierski, Martherita Saltamacchia, Cathrin Strömer, Stefanie Mrachacz') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Zusätzliche Choreografien:') }}</div>
+          <div>{{ __('Simon Crettol, Maria Demandt, Katrin Kolo, Emma Murray, Marthe Krummenacher, Camilla Parini, Léa Tirabasso') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Grafik:') }}</div>
+          <div>{{ __('Bivgrafik') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Administration:') }}</div>
+          <div>{{ __('Cie Nicole Seiler : Léonore Friedli') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Touring:') }}</div>
+          <div>{{ __('Cie Nicole Seiler : Ana Lagarrigue') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Historiker*innen:') }}</div>
+          <div>{{ __('Anne-Gaëlle Neipp, Ariane Devanthéry, Jean-Pierre Pastori, Olivier Robert, Lausanne Jardins, Véronique Rey-Vodoz, Catherine Schmutz') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Produktion:') }}</div>
+          <div>{{ __('Cie Nicole Seiler') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Koproduktion:') }}</div>
+          <div>{{ __('Théâtre de l\'Arsenic Lausanne (CH), far° Nyon (CH), Lausanne Jardins (CH)') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Unterstützung:') }}</div>
+          <div>{{ __('Stadt Lausanne, Kanton Waadt, Pro Helvetia – Schweizerische Kulturstiftung, Loterie Romande, Ernst Göhner Stiftung') }}</div>
+        </div>
+        <div class="lg:flex">
+          <div class="lg:min-w-[220px] lg:pr-10">{{ __('Dank an:') }}</div>
+          <div>{{ __('Cie Kokodyniack') }}</div>
+        </div>
       </div>
     </div>
-    <div class="lg:col-span-6">
-      <img src="{{ asset('img/about-1.jpg') }}" alt="" class="w-full h-auto">
+    <div class="lg:col-span-6 space-y-16 lg:space-y-32">
+      @foreach ($images as $image)
+        <picture class="block">
+          <source srcset="{{ asset('img/'.$image['src'].'-lg.webp') }}" media="(min-width: 1024px)" type="image/webp">
+          <source srcset="{{ asset('img/'.$image['src'].'-md.webp') }}" media="(min-width: 768px)" type="image/webp">
+          <source srcset="{{ asset('img/'.$image['src'].'-sm.webp') }}" type="image/webp">
+          <source srcset="{{ asset('img/'.$image['src'].'-lg.jpg') }}" media="(min-width: 1024px)">
+          <source srcset="{{ asset('img/'.$image['src'].'-md.jpg') }}" media="(min-width: 768px)">
+          <img 
+            src="{{ asset('img/'.$image['src'].'-sm.jpg') }}" 
+            alt="{{ $image['caption'] ?? '' }}" 
+            class="w-full h-auto"
+            loading="lazy">
+        </picture>
+      @endforeach
     </div>
   </div>
 </x-layout.inner>
