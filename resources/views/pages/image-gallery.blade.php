@@ -77,6 +77,8 @@ $images = [
         src="{{ asset('img/'.$image['src'].'-sm.jpg') }}" 
         alt="{{ $image['caption'] ?? '' }}" 
         class="w-full h-auto {{ $image['format'] === 'portrait' ? 'sm:max-w-[50%]' : ($image['format'] === 'landscape' ? 'lg:max-w-[75%]' : '') }}"
+        width="700"
+        height="467"
         loading="lazy">
         @if ($image['caption'])
           <figcaption class="text-royal font-xs lg:font-sm mt-6">
