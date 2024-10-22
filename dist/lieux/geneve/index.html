@@ -20,15 +20,15 @@
 <meta property="twitter:image" content="https://palimpsest.ch.marcelito.ch/opengraph-fr.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<meta name="csrf-token" content="fbSugG9raIQBZ6u2Xt9AhbcwC2peomDD9rIvpwLo">
+<meta name="csrf-token" content="5r1j5Rs2QwfA2EDBNdwtf7XKNW7BNRvcoiJSg8L4">
 <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Genève – Palimpsest – Parcours sonore – Cie Nicole Seiler" />
 <link rel="manifest" href="/site.webmanifest" />
-<link rel="preload" href="/build/assets/AtlasGrotesk-Medium-Web.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.TT4AwhwE.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.TT4AwhwE.css" /><noscript>
+
+<link rel="preload" as="style" href="https://palimpsest.ch.marcelito.ch/build/assets/app.B_w004_n.css" /><link rel="stylesheet" href="https://palimpsest.ch.marcelito.ch/build/assets/app.B_w004_n.css" /><noscript>
   <style>
     .simplebar-content-wrapper {
       scrollbar-width: auto;
@@ -44,10 +44,10 @@
 </noscript>
 </head>
 
-<body class="bg-royal antialiased font-medium leading-[1.125] lg:leading-[1.2] mx-auto flex flex-col min-h-dvh lg:min-h-screen">
+<body class="bg-royal antialiased font-medium text-sm lg:text-lg leading-[1.125] lg:leading-[1.2] mx-auto flex flex-col min-h-dvh lg:min-h-screen">
   
   <header class="bg-royal border-b lg:border-b-2 border-b-white h-78 lg:h-114 sticky z-40 top-0 w-full text-white">
-  <div class="max-w-page mx-auto px-16 lg:px-32 relative w-full flex justify-between">
+  <div class="max-w-page mx-auto px-16 lg:px-32 3xl:px-0 relative w-full flex justify-between">
   <a 
   href="javascript:;" 
   x-on:click="show_menu = ! show_menu; ; $event.target.closest('html').classList.toggle('has_menu');" 
@@ -248,37 +248,43 @@
   </ul>
 </nav>
 </div></header>
-  <main role="main" class="bg-white flex-1 relative z-10">
+    <main role="main" class="bg-white flex-1 relative z-10">
   <header class="bg-royal text-white sticky top-0 z-50">
-  <div class="max-w-page mx-auto px-16 lg:px-32 flex items-center justify-between">
-  <h2>Genève</h2>
+  <div class="max-w-page mx-auto px-16 lg:px-32 3xl:px-0 flex items-center justify-between leading-none h-60 lg:h-92">
+  <h2 class="text-2xl lg:text-4xl !mb-0">Genève</h2>
     <a 
       href="javascript:;" 
-      x-on:click="show_menu = true; ; $event.target.closest('html').classList.toggle('has_menu');" 
-      class="text-4xl">
-      X
+      x-on:click="show_menu = true; ; $event.target.closest('html').classList.toggle('has_menu');">
+      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-32 lg:w-58 h-auto">
+  <path d="M0.707031 0.719971L26.285 26.298" stroke="white" stroke-width="2"/>
+  <path d="M0.707031 25.351L26.285 0.719971" stroke="white" stroke-width="2"/>
+</svg>
+
       </a>
 </div></header>
-<div class="max-w-page mx-auto px-16 lg:px-32 !px-0 lg:!px-32">
+<div class="max-w-page mx-auto px-16 lg:px-32 3xl:px-0 !px-0">
   <div class="grid grid-cols-12">
-    <div class="order-2 lg:order-1 lg:pr-8 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh-500px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+    <div class="order-2 lg:order-1 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh_-_432px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
               <div 
   data-location="le_grutli" 
-  class="relative border-b border-coral scroll-mt-[300px]"
+  class="relative text-coral border-b lg:border-b-2 border-coral last-of-type:has-[.is-active]:border-none scroll-mt-[300px]"
   data-accordion>
   <button 
     type="button" 
-    class="bg-white text-coral py-5 w-full text-left"
+    class="bg-white w-full text-left py-16"
     data-accordion-button>
-    <div class="flex items-center justify-between px-16 lg:px-0">
-      <h2>Le Grütli</h2>
+    <div class="flex items-center justify-between px-16 lg:pl-32 3xl:pl-0 lg:pr-8">
+      <div class="3xl:flex 3xl:items-end 3xl:space-x-36">
+        <h2 class="text-2xl mb-2 leading-none">Le Grütli</h2>
+        <span class="text-sm lg:text-base">Place Béla Bartok</span>
+      </div>
       <svg 
         width="40" 
         height="40" 
         viewBox="0 0 40 40" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
-        class="transform transition-transform duration-300 ease-in-out w-24 h-24">
+        class="transform transition-transform duration-300 ease-in-out shrink-0 w-32 h-32">
         <path d="M0 20H40" stroke="#EF6344" stroke-width="4"/>
         <path d="M20 0L20 40" stroke="#EF6344" stroke-width="4"/>
       </svg>
@@ -288,42 +294,49 @@
   class="relative overflow-hidden opacity-0"
   style="max-height: 0px;"
   data-accordion-content>
-  <div class="py-10">
+  <div class="text-sm lg:text-base lg:leading-[1.222]">
+    <div class="text-white bg-coral py-16 pl-16 lg:pl-32 3xl:pl-16">
+      Écoute la pièce
+    </div>
     <div>
-      <p>Place Béla Bartok</p>
               <table>
           <tbody>
-                          <tr>
-                <td>1871 - 1873</td>
-                <td>Construction de l&#039;École du Grütli sur les plans de l&#039;architecte Georges Matthey.</td>
+            <tr class="border-y border-coral lg:border-y-2">
+              <td colspan="2" class="pl-16 lg:pl-32 3xl:pl-0 py-16">
+                The following facts are subjectively selected and inspire/complete the audio piece.
+              </td>
+            </tr>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">1871 - 1873</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">Construction de l&#039;École du Grütli sur les plans de l&#039;architecte Georges Matthey.</td>
               </tr>
-                          <tr>
-                <td>1873 – 1969</td>
-                <td>L&#039;École du Grütli réunit des écoles primaires, l&#039;École de dessin et l&#039;École industrielle. Dès 1929 les élèves d&#039;école primaire n&#039;ayant pu accéder au Collège étaient placés dans cette école.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">1873 – 1969</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">L&#039;École du Grütli réunit des écoles primaires, l&#039;École de dessin et l&#039;École industrielle. Dès 1929 les élèves d&#039;école primaire n&#039;ayant pu accéder au Collège étaient placés dans cette école.</td>
               </tr>
-                          <tr>
-                <td>1920 - 1930</td>
-                <td>Béla Bartok, pianiste et compositeur hongrois travaille avec Ernest Ansermet et l&#039;Orchestre de la suisse romande au Victoria Hall à Genève. Le préau de l&#039;ancienne école du Grütli est nommé d&#039;après lui.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">1920 - 1930</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">Béla Bartok, pianiste et compositeur hongrois travaille avec Ernest Ansermet et l&#039;Orchestre de la suisse romande au Victoria Hall à Genève. Le préau de l&#039;ancienne école du Grütli est nommé d&#039;après lui.</td>
               </tr>
-                          <tr>
-                <td>1987 - 1989</td>
-                <td>Transformation du bâtiment en Maison des arts du Grütli par le bureau d&#039;étude Jean Stryjenski et Urs Tschumi.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">1987 - 1989</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">Transformation du bâtiment en Maison des arts du Grütli par le bureau d&#039;étude Jean Stryjenski et Urs Tschumi.</td>
               </tr>
-                          <tr>
-                <td>13 novembre 1988</td>
-                <td>Inauguration de la Maison des arts du Grütli. L&#039;artiste Xavier Juliot installe une sculpture gonflable sur le toit pour l&#039;occasion.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">13 novembre 1988</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">Inauguration de la Maison des arts du Grütli. L&#039;artiste Xavier Juliot installe une sculpture gonflable sur le toit pour l&#039;occasion.</td>
               </tr>
-                          <tr>
-                <td>1991</td>
-                <td>Répétitions de Cantus Planus, chorégraphie de Noémie Lapzeson dans le studio de l&#039;adc nommé aujourd&#039;hui Studio Noémie Lapzeson.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">1991</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">Répétitions de Cantus Planus, chorégraphie de Noémie Lapzeson dans le studio de l&#039;adc nommé aujourd&#039;hui Studio Noémie Lapzeson.</td>
               </tr>
-                          <tr>
-                <td>22 juin 2020</td>
-                <td>Night of light. En Suisse, plus de 1000 lieux culturels s&#039;éclairent en rouge. Cette action vise à sensibiliser la population aux difficultés rencontrées par le secteur culturel après la pandémie de SARS-CoV2 du printemps 2020.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">22 juin 2020</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">Night of light. En Suisse, plus de 1000 lieux culturels s&#039;éclairent en rouge. Cette action vise à sensibiliser la population aux difficultés rencontrées par le secteur culturel après la pandémie de SARS-CoV2 du printemps 2020.</td>
               </tr>
-                          <tr>
-                <td>Août 2020</td>
-                <td>La danseuse Marthe Krummenacher crée des danses inédites pour le projet Palimpsest.</td>
+                          <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
+                <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">Août 2020</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">La danseuse Marthe Krummenacher crée des danses inédites pour le projet Palimpsest.</td>
               </tr>
                       </tbody>
         </table>
@@ -334,8 +347,8 @@
     <div class="order-1 lg:order-2 col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
       <div 
         id="map" 
-        class="w-full min-h-[300px] lg:min-h-[500px]"
-        data-map-zoom="10"
+        class="w-full min-h-[275px] lg:min-h-[calc(100vh_-_432px)]"
+        data-map-zoom="12"
         data-map-locations='[
                       {
               "coordinates": [6.141246, 46.201008],
@@ -348,8 +361,8 @@
     </div>
   </div>
 </div>
-</main>  <footer class="border-t lg:border-t-2 border-t-white text-white text-sm lg:text-lg pt-24 pb-16 lg:py-32">
-  <div class="max-w-page mx-auto px-16 lg:px-32">
+</main>  <footer class="border-t lg:border-t-2 border-t-white text-white pt-24 pb-16 lg:py-32">
+  <div class="max-w-page mx-auto px-16 lg:px-32 3xl:px-0">
   <address class="not-italic">
       Cie Nicole Seiler<br>Rue du Valentin 34 et demi<br>CH–1004 Lausanne
     </address>
