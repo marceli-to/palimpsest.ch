@@ -4,9 +4,7 @@
   style="max-height: 0px;"
   data-accordion-content>
   <div class="text-sm lg:text-base lg:leading-[1.222]">
-    <div class="text-white bg-coral py-16 pl-16 lg:pl-32 3xl:pl-16">
-      {{ __('Erlebe das Hörstück') }}
-    </div>
+    <x-audio.player :audio_file="$location->audio_file" />
     <div>
       @if ($location->facts->count() > 0)
         <table>
