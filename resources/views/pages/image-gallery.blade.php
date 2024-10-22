@@ -2,63 +2,63 @@
 $images = [
   [
     'src' => 'palimpsest-nicole-seiler-galerie-01',
-    'caption' => 'Caption',
+    'caption' => 'Palimpsest Lausanne, Grand Pont',
     'format' => 'portrait'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-02',
-    'caption' => '',
+    'caption' => 'Palimpsest Lausanne, Montbenon',
     'format' => 'ultra-wide'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-03',
-    'caption' => '',
+    'caption' => 'Palimpsest Lausanne, St. François',
     'format' => 'landscape'
 
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-04',
-    'caption' => '',
+    'caption' => 'Palimpsest Lausanne, Promenade Jean Villars GIlles',
     'format' => 'portrait'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-05',
-    'caption' => '',
+    'caption' => 'Palimpsest Lausanne, Parc de Valency',
     'format' => 'landscape'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-06',
-    'caption' => '',
+    'caption' => 'Palimpsest Lausanne, Petit parc à la fontaine',
     'format' => 'landscape'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-07',
-    'caption' => '',
+    'caption' => 'Palimpsest Lausanne Jardins, vernissage with live performance (Séverine Skierski, Stéphane Vecchione)',
     'format' => 'landscape'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-08',
-    'caption' => '',
+    'caption' => 'Palimpsest Nyon, Rue des Marchandises',
     'format' => 'portrait'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-09',
-    'caption' => '',
+    'caption' => 'Palimpsest Nyon, vernissage at far° festival',
     'format' => 'landscape'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-10',
-    'caption' => '',
+    'caption' => 'Making of: Séverine Skierski in the recording studio',
     'format' => 'landscape'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-11',
-    'caption' => '',
+    'caption' => 'Making of: writing for Palimpsest Lausanne Jardins, Petit parc à la fontaine ',
     'format' => 'landscape'
   ],
   [
     'src' => 'palimpsest-nicole-seiler-galerie-12',
-    'caption' => 'Test',
+    'caption' => 'Making of: writing for Palimpsest Givrins',
     'format' => 'landscape'
   ]
 ];

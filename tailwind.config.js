@@ -22,6 +22,7 @@ export default {
         'tall-md': {'raw': '(max-aspect-ratio: 10/9) and (min-width: 769px)'},
         'square': {'raw': '(min-aspect-ratio: 1/1) and (max-aspect-ratio: 16/9)'},
         'wide': {'raw': '(min-aspect-ratio: 16/10)'},
+        '3xl': '1984px',
       },
 
       gridTemplateColumns: {

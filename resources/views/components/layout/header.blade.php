@@ -5,3 +5,6 @@
     <x-menu.language class="hidden lg:block lg:mt-34" />
   </x-layout.inner>
 </header>
+@if (Request::routeIs('*.page.place'))
+  @yield('page_header')
+@endif
