@@ -1,6 +1,10 @@
 {
+  "_audio.quailNN0.js": {
+    "file": "assets/audio.quailNN0.js",
+    "name": "audio"
+  },
   "resources/css/app.css": {
-    "file": "assets/app.LBX5yi4z.css",
+    "file": "assets/app.DSricdBK.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -26,18 +30,24 @@
     "src": "resources/img/marker.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app.DjBwbiIh.js",
+    "file": "assets/app.wO8CYyxQ.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
+    "imports": [
+      "_audio.quailNN0.js"
+    ],
     "css": [
       "assets/app.BM0-tcIW.css"
     ]
   },
   "resources/js/place.js": {
-    "file": "assets/place.CjXhbfuM.js",
+    "file": "assets/place.CWKVVk5r.js",
     "name": "place",
     "src": "resources/js/place.js",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_audio.quailNN0.js"
+    ]
   }
 }
