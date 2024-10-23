@@ -4,7 +4,7 @@
   data-player="audio" 
   data-audio="/audio/{{ $audio_file }}">
   <div class="text-sm text-center lg:text-left mb-16 lg:mb-0 lg:min-w-180">
-    Erlebe das Hörstück
+    {{ __('Erlebe das Hörstück') }}
   </div>
 
   <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-20 lg:flex-1">
