@@ -68,107 +68,107 @@ const AudioPlayer = (function() {
 			this.progressHandle.style.left = '0%';
 		}
 
-			togglePlayPause() {
-				// Pause all other players when this one plays
-				if (this.audio.paused) {
-					document.querySelectorAll('[data-player="audio"]').forEach(playerEl => {
-						const player = playerEl.audioPlayer;
-						if (player && player !== this && !player.audio.paused) {
-							player.togglePlayPause();
-						}
-					});
-				}
-
-				if (this.audio.paused) {
-					this.audio.play()
-						.then(() => {
-							this.playIcon.classList.add('hidden');
-							this.pauseIcon.classList.remove('hidden');
-						})
-						.catch(error => {
-							console.error('Error playing audio:', error);
-						});
-				} else {
-					this.audio.pause();
-					this.playIcon.classList.remove('hidden');
-					this.pauseIcon.classList.add('hidden');
-				}
-			}
-
-			updateProgress() {
-				if (!this.audio.duration) return;
-				
-				const percent = (this.audio.currentTime / this.audio.duration) * 100;
-				this.progressBar.style.width = `${percent}%`;
-        // do not update after 95%
-				if (percent < 98) {
-					this.progressHandle.style.left = `${percent}%`;
-				}
-				this.currentTimeEl.textContent = this.formatTime(this.audio.currentTime);
-			}
-
-			formatTime(seconds) {
-				const minutes = Math.floor(seconds / 60);
-				const remainingSeconds = Math.floor(seconds % 60);
-				return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-			}
-
-			seek(seconds) {
-				const newTime = Math.max(0, Math.min(this.audio.duration, this.audio.currentTime + seconds));
-				if (isFinite(newTime)) {
-					this.audio.currentTime = newTime;
-				}
-			}
-
-			setProgress(e) {
-				const bounds = this.progressContainer.getBoundingClientRect();
-				const x = e.clientX - bounds.left;
-				const percent = Math.min(Math.max(0, x / bounds.width), 1);
-				if (isFinite(this.audio.duration)) {
-					this.audio.currentTime = percent * this.audio.duration;
-				}
-			}
-
-			initializeEventListeners() {
-				// Audio events
-				this.audio.addEventListener('loadedmetadata', () => {
-					this.durationEl.textContent = this.formatTime(this.audio.duration);
-				});
-				this.audio.addEventListener('timeupdate', this.updateProgress);
-				this.audio.addEventListener('ended', () => {
-					this.playIcon.classList.remove('hidden');
-					this.pauseIcon.classList.add('hidden');
-				});
-
-				// Control events
-				this.playPauseBtn.addEventListener('click', this.togglePlayPause);
-				this.rewindBtn.addEventListener('click', () => this.seek(-10));
-				this.forwardBtn.addEventListener('click', () => this.seek(10));
-
-				// Progress bar click event
-				this.progressContainer.addEventListener('click', this.setProgress.bind(this));
-
-				// Store instance reference on the element
-				this.player.audioPlayer = this;
-
-        // Keyboard controls
-        document.addEventListener('keydown', (e) => {
-          if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-          
-          switch (e.code) {
-            case 'Space':
-              e.preventDefault();
-              this.togglePlayPause();
-              break;
-            case 'ArrowLeft':
-              this.seek(-5);
-              break;
-            case 'ArrowRight':
-              this.seek(5);
-              break;
+    togglePlayPause() {
+      // Pause all other players when this one plays
+      if (this.audio.paused) {
+        document.querySelectorAll('[data-player="audio"]').forEach(playerEl => {
+          const player = playerEl.audioPlayer;
+          if (player && player !== this && !player.audio.paused) {
+            player.togglePlayPause();
           }
         });
-			}
+      }
+
+      if (this.audio.paused) {
+        this.audio.play()
+          .then(() => {
+            this.playIcon.classList.add('hidden');
+            this.pauseIcon.classList.remove('hidden');
+          })
+          .catch(error => {
+            console.error('Error playing audio:', error);
+          });
+      } else {
+        this.audio.pause();
+        this.playIcon.classList.remove('hidden');
+        this.pauseIcon.classList.add('hidden');
+      }
+    }
+
+    updateProgress() {
+      if (!this.audio.duration) return;
+      
+      const percent = (this.audio.currentTime / this.audio.duration) * 100;
+      this.progressBar.style.width = `${percent}%`;
+      // do not update after 95%
+      if (percent < 98) {
+        this.progressHandle.style.left = `${percent}%`;
+      }
+      this.currentTimeEl.textContent = this.formatTime(this.audio.currentTime);
+    }
+
+    formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = Math.floor(seconds % 60);
+      return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+    }
+
+    seek(seconds) {
+      const newTime = Math.max(0, Math.min(this.audio.duration, this.audio.currentTime + seconds));
+      if (isFinite(newTime)) {
+        this.audio.currentTime = newTime;
+      }
+    }
+
+    setProgress(e) {
+      const bounds = this.progressContainer.getBoundingClientRect();
+      const x = e.clientX - bounds.left;
+      const percent = Math.min(Math.max(0, x / bounds.width), 1);
+      if (isFinite(this.audio.duration)) {
+        this.audio.currentTime = percent * this.audio.duration;
+      }
+    }
+
+    initializeEventListeners() {
+      // Audio events
+      this.audio.addEventListener('loadedmetadata', () => {
+        this.durationEl.textContent = this.formatTime(this.audio.duration);
+      });
+      this.audio.addEventListener('timeupdate', this.updateProgress);
+      this.audio.addEventListener('ended', () => {
+        this.playIcon.classList.remove('hidden');
+        this.pauseIcon.classList.add('hidden');
+      });
+
+      // Control events
+      this.playPauseBtn.addEventListener('click', this.togglePlayPause);
+      this.rewindBtn.addEventListener('click', () => this.seek(-10));
+      this.forwardBtn.addEventListener('click', () => this.seek(10));
+
+      // Progress bar click event
+      this.progressContainer.addEventListener('click', this.setProgress.bind(this));
+
+      // Store instance reference on the element
+      this.player.audioPlayer = this;
+
+      // Keyboard controls
+      document.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        
+        switch (e.code) {
+          case 'Space':
+            e.preventDefault();
+            this.togglePlayPause();
+            break;
+          case 'ArrowLeft':
+            this.seek(-5);
+            break;
+          case 'ArrowRight':
+            this.seek(5);
+            break;
+        }
+      });
+    }
 	}
 
   function pauseAllPlayers() {
