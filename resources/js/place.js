@@ -86,7 +86,7 @@ const Places = (function() {
 
     map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
+      style: 'mapbox://styles/marcelitoooo/cm2lv6vaf01ey01pe9kdx35a8?optimize=true',
       center: locations[0]?.coordinates,
       zoom: zoom
     });
