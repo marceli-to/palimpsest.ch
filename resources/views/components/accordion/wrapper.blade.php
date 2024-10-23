@@ -5,7 +5,7 @@
   data-accordion>
   <button 
     type="button" 
-    class="bg-white w-full text-left py-16 scroll-mt-[78px] lg:scroll-mt-[206px]"
+    class="bg-white w-full text-left py-16 scroll-mt-[78px] lg:scroll-mt-0"
     data-accordion-button>
     <div class="flex items-center justify-between px-16 lg:pl-32 3xl:pl-0 lg:pr-8">
       <div class="3xl:flex 3xl:items-end 3xl:space-x-36">
