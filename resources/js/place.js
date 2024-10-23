@@ -1,3 +1,5 @@
+import { pauseAllAudio, stopAllAudio } from './audio.js';
+
 const Places = (function() {
   let map;
   let markers = [];
@@ -22,6 +24,7 @@ const Places = (function() {
   }
 
   function toggleAccordion(slug) {
+    stopAllAudio();
     if (selectedItem === slug) {
       closeAccordion(slug);
       selectedItem = null;
@@ -31,10 +34,10 @@ const Places = (function() {
       }
       openAccordion(slug);
       selectedItem = slug;
-      // scroll the open accordion into view, wait 100ms to avoid blocking the UI
-      // setTimeout(() => {
-      //   accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
-      // }, 100);
+      //scroll the open accordion into view, wait 100ms to avoid blocking the UI
+      setTimeout(() => {
+        accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
+      }, 250);
     }
     updateMap(selectedItem);
   }
@@ -44,6 +47,10 @@ const Places = (function() {
     button.classList.add('is-active');
     content.style.maxHeight = `${content.scrollHeight}px`;
     content.style.opacity = '1';
+    //scroll the open accordion into view, wait 100ms to avoid blocking the UI
+    setTimeout(() => {
+      accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
+    }, 250);
   }
 
   function closeAccordion(slug) {

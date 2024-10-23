@@ -1,11 +1,11 @@
 @props(['location'])
 <div 
   data-location="{{ $location->slug }}" 
-  class="relative text-coral border-b lg:border-b-2 border-coral last-of-type:has-[.is-active]:border-none scroll-mt-[300px]"
+  class="relative text-coral border-b lg:border-b-2 border-coral last-of-type:has-[.is-active]:border-none"
   data-accordion>
   <button 
     type="button" 
-    class="bg-white w-full text-left py-16"
+    class="bg-white w-full text-left py-16 scroll-mt-[78px] lg:scroll-mt-[206px]"
     data-accordion-button>
     <div class="flex items-center justify-between px-16 lg:pl-32 3xl:pl-0 lg:pr-8">
       <div class="3xl:flex 3xl:items-end 3xl:space-x-36">
