@@ -3,6 +3,7 @@
 use App\Models\Place;
 $place = Place::with('locations.facts')->where('slug', $slug)->published()->firstOrFail();
 @endphp
+<!-- 432px / 206px -->
 <header class="bg-royal text-white sticky top-0 z-50">
   <x-layout.inner class="flex items-center justify-between leading-none h-60 lg:h-92">
     <h2 class="text-2xl lg:text-4xl !mb-0">{{ $place->name }}</h2>
@@ -15,7 +16,7 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
 </header>
 <x-layout.inner class="!px-0">
   <div class="grid grid-cols-12">
-    <div class="order-2 lg:order-1 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh_-_432px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
+    <div class="order-2 lg:order-1 col-span-12 lg:col-span-6 lg:max-h-[calc(100vh_-_206px)] lg:overflow-y-auto lg:overflow-x-hidden" data-simplebar>
       @foreach ($place->locations as $location)
         <x-accordion.wrapper :location="$location" />
       @endforeach
@@ -23,17 +24,13 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
     <div class="order-1 lg:order-2 col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start">
       <div 
         id="map" 
-        class="w-full min-h-[275px] lg:min-h-[calc(100vh_-_432px)]"
+        class="w-full min-h-[275px] lg:min-h-[calc(100vh_-_206px)]"
         data-map-zoom="12"
         data-map-locations='[
-          @foreach ($place->locations as $location)
-            {
-              "coordinates": [{{ $location->longitude }}, {{ $location->latitude }}],
-              "title": "{{ $location->title }}",
-              "slug": "{{ $location->slug }}"
-            }
-            {{ !$loop->last ? ',' : '' }}
-          @endforeach
+        @foreach ($place->locations as $location)
+          { "coordinates": [{{ $location->longitude }}, {{ $location->latitude }}], "title": "{{ $location->title }}", "slug": "{{ $location->slug }}"}
+          {{ !$loop->last ? ',' : '' }}
+        @endforeach
         ]'>
       </div>
     </div>

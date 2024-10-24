@@ -41,3 +41,11 @@ html.has_menu footer {
   will-change: max-height, opacity;
 }
 
+.mapboxgl-ctrl-logo {
+  @apply !hidden;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  @apply !hidden;
+}
+
