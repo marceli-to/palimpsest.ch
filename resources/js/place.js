@@ -34,10 +34,7 @@ const Places = (function() {
       }
       openAccordion(slug);
       selectedItem = slug;
-      //scroll the open accordion into view, wait 100ms to avoid blocking the UI
-      setTimeout(() => {
-        accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
-      }, 250);
+      scrollAccordionIntoView(slug);
     }
     updateMap(selectedItem);
   }
@@ -47,10 +44,13 @@ const Places = (function() {
     button.classList.add('is-active');
     content.style.maxHeight = `${content.scrollHeight}px`;
     content.style.opacity = '1';
-    //scroll the open accordion into view, wait 100ms to avoid blocking the UI
+    scrollAccordionIntoView(slug);
+  }
+
+  function scrollAccordionIntoView(slug) {
     setTimeout(() => {
       accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
-    }, 250);
+    }, 300);
   }
 
   function closeAccordion(slug) {
