@@ -9,7 +9,7 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
     <a 
       href="javascript:;" 
       x-on:click="show_menu = true; {{ !Request::routeIs('*.page.place') ? 'is_pages = false' : '' }}; $event.target.closest('html').classList.toggle('has_menu');">
-      <x-icons.cross class="w-32 lg:w-58 h-auto" />
+      <x-icons.cross class="w-26 lg:w-40 h-auto" />
     </a>
   </x-layout.inner>
 </header>
@@ -20,7 +20,7 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
         <x-accordion.wrapper :location="$location" />
       @endforeach
     </div>
-    <div class="min-h-[275px] {{ $place->locations->count() > 4 ? 'lg:min-h-screen' : 'lg:min-h-[calc(100vh_-_206px)]' }} order-1 lg:order-2 col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start"
+    <div class="min-h-[275px] aspect-square lg:aspect-auto {{ $place->locations->count() > 4 ? 'lg:min-h-screen' : 'lg:min-h-[calc(100vh_-_206px)]' }} order-1 lg:order-2 col-span-12 lg:col-span-6 flex flex-col gap-12 justify-start items-start"
         id="map" 
         data-map-zoom="12"
         data-map-locations='[

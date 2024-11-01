@@ -82,7 +82,7 @@ $images = [
         height="467"
         loading="lazy">
         @if ($image['caption'])
-          <figcaption class="text-royal font-xs lg:font-sm mt-6">
+          <figcaption class="text-royal text-xs lg:text-sm mt-6">
             {{ $image['caption'] }}
           </figcaption>
         @endif

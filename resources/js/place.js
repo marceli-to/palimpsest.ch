@@ -47,6 +47,9 @@ const Places = (function() {
   }
 
   function scrollAccordionIntoView(slug) {
+    // don't scroll if there are less than 4 locations
+    if (document.querySelectorAll('[data-location]').length < 4) return;
+
     setTimeout(() => {
       accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
     }, 300);
@@ -136,7 +139,7 @@ const Places = (function() {
   }
 
   function fitMapToMarkers(locations) {
-    if (locations.length > 4) {
+    if (locations.length > 1) {
       const bounds = new mapboxgl.LngLatBounds();
       locations.forEach(location => bounds.extend(location.coordinates));
       map.fitBounds(bounds, { padding: 100 });
