@@ -47,12 +47,13 @@ const Places = (function() {
   }
 
   function scrollAccordionIntoView(slug) {
+    setTimeout(() => {
+      accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
+    }, 300);
     // if the slug is arsenic, scroll the window to the top
-   if (JSON.parse(document.getElementById('map').dataset.mapLocations || '[]').length > 1) {
-      setTimeout(() => {
-        accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
-      }, 300);
-    }
+  //  if (JSON.parse(document.getElementById('map').dataset.mapLocations || '[]').length > 1) {
+
+  //   }
   }
 
   function closeAccordion(slug) {
