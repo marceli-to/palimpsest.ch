@@ -34,7 +34,6 @@ const Places = (function() {
       }
       openAccordion(slug);
       selectedItem = slug;
-      scrollAccordionIntoView(slug);
     }
     updateMap(selectedItem);
   }
@@ -48,9 +47,12 @@ const Places = (function() {
   }
 
   function scrollAccordionIntoView(slug) {
-    setTimeout(() => {
-      accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
-    }, 300);
+    // if the slug is arsenic, scroll the window to the top
+   if (JSON.parse(document.getElementById('map').dataset.mapLocations || '[]').length > 1) {
+      setTimeout(() => {
+        accordions[slug].button.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
   }
 
   function closeAccordion(slug) {
@@ -137,10 +139,10 @@ const Places = (function() {
   }
 
   function fitMapToMarkers(locations) {
-    if (locations.length > 1) {
+    if (locations.length > 4) {
       const bounds = new mapboxgl.LngLatBounds();
       locations.forEach(location => bounds.extend(location.coordinates));
-      map.fitBounds(bounds, { padding: 50 });
+      map.fitBounds(bounds, { padding: 100 });
     }
   }
 
