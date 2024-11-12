@@ -5,6 +5,6 @@ return [
   'about' => 'about',
   'places' => 'places',
   'image-gallery' => 'image-gallery',
-  // 'imprint' => 'imprint',
+  'imprint' => 'imprint',
   'privacy-policy' => 'privacy-policy',
 ];
