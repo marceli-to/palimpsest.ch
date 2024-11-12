@@ -12,4 +12,8 @@ Route::get('lieux/{place}', [PageController::class, 'place'])->name('fr.page.pla
 Route::get('de/orte/{place}', [PageController::class, 'place'])->name('de.page.place');
 Route::get('en/places/{place}', [PageController::class, 'place'])->name('en.page.place');
 
-Route::get('{locale?}', [PageController::class, 'home'])->name('page.home')->where('locale', implode('|', config('locales.supported')));
+// Route::get('{locale?}', [PageController::class, 'home'])->name('page.home')->where('locale', implode('|', config('locales.supported')));
+
+Route::get('/', [PageController::class, 'home'])->name('page.home');
+Route::get('/de', [PageController::class, 'home'])->name('page.home');
+Route::get('/en', [PageController::class, 'home'])->name('page.home');
