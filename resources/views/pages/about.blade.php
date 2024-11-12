@@ -33,7 +33,7 @@ $images = [
       <h2>{{ __('Sprache') }}</h2>
       <p>{{ __('Die Stücke sind in der Originalsprache ihrer Standorte verfasst.') }}</p>
       <div class="hidden lg:block">
-        <h2>{{ __('Credits') }}</h2>
+        <h2 class="mt-32 lg:mt-48">{{ __('Credits') }}</h2>
         <div class="space-y-12 lg:space-y-16">
           <div class="lg:grid lg:grid-cols-about lg:gap-x-10">
             <div>{{ __('Konzept:') }}</div>

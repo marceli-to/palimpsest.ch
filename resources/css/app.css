@@ -19,6 +19,14 @@ main p:not(:last-of-type) {
   @apply mb-12 lg:mb-16;
 }
 
+main ul {
+  @apply m-0 p-0 mb-12 lg:mb-16 list-['–_'];
+}
+
+main li {
+  @apply mb-3 lg:mb-6 ml-12 lg:ml-18;
+}
+
 
 /* Hide main and footer when menu is open */
 html.has_menu main,
