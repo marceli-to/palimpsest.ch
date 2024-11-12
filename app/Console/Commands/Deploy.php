@@ -15,11 +15,14 @@ class Deploy extends Command
   {
     // Call the artisan command "export"
     $this->call('export');
+        
+    // For some stupid reason, the pages "mentions-legales" and "politique-de-confidentialite" have set the 
+    // wrong locale in the html tag. We need to fix this by copying the correct html from the live site.
+    $this->fixMissingPages();
 
     // Search for all occurrences of the string "https://palimpsest.ch.test" and replace it with ENV('APP_URL_PROD') in the dist folder
     $this->replaceInDist('https://palimpsest.ch.test', env('APP_URL_PROD'));
 
-    $this->fixMissingPages();
   }
 
   protected function replaceInDist($search, $replace)
@@ -69,5 +72,7 @@ class Deploy extends Command
       $filePath = base_path('dist/' . $route . '/index.html');
       file_put_contents($filePath, $content);
     }
+
+    $this->info('Finished fixing missing pages');
   }
 }
