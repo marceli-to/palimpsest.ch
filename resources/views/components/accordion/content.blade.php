@@ -17,7 +17,7 @@
             @foreach ($location->facts as $fact)
               <tr class="border-b border-coral lg:border-b-2 last-of-type:border-b-0">
                 <td class="w-full lg:w-180 block mb-10 lg:mb-0 lg:table-cell p-16 pb-0 lg:pb-16 lg:pl-32 3xl:pl-0 lg:pr-24 align-top">{{ $fact->periode }}</td>
-                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-32 align-top">{{ $fact->text }}</td>
+                <td class="w-full lg:w-auto block lg:table-cell p-16 pt-0 lg:pt-16 lg:pr-16 align-top">{{ $fact->text }}</td>
               </tr>
             @endforeach
           </tbody>
