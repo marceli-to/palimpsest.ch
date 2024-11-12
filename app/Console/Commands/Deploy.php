@@ -17,7 +17,7 @@ class Deploy extends Command
     $this->call('export');
 
     // Search for all occurrences of the string "https://palimpsest.ch.test" and replace it with ENV('APP_URL_PROD') in the dist folder
-    // $this->replaceInDist('https://palimpsest.ch.test', env('APP_URL_PROD'));
+    $this->replaceInDist('https://palimpsest.ch.test', env('APP_URL_PROD'));
 
     $this->fixMissingPages();
   }
