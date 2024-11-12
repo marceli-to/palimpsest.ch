@@ -47,7 +47,7 @@ const Places = (function() {
   }
 
   function scrollAccordionIntoView(slug) {
-    // don't scroll if there are less than 4 locations and the screen width is less than 768px
+    // don't scroll if there are less than 4 locations and the screen width is greater than 768px
     if (document.querySelectorAll('[data-location]').length < 4 && window.innerWidth > 768) return;
 
     setTimeout(() => {
