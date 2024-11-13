@@ -8,7 +8,7 @@
     class="bg-white w-full text-left py-16 scroll-mt-[78px] lg:scroll-mt-106"
     data-accordion-button>
     <div class="flex items-center justify-between px-16 lg:pl-32 3xl:pl-0 lg:pr-8">
-      <div class="3xl:flex 3xl:items-end 3xl:space-x-36">
+      <div class="3xl:flex 3xl:items-end 3xl:space-x-8">
         <h2 class="text-2xl mb-2 leading-none">{{ $location->title }}</h2>
         <span class="text-sm lg:text-base">{{ $location->subtitle }}</span>
       </div>
