@@ -19,14 +19,14 @@
     </div>
 
     <div class="flex justify-center lg:justify-start items-center gap-20 lg:gap-14 mt-16 lg:mt-0">
-      <button data-rewind>
+      <button data-rewind title="{{ __('Zurück') }}">
         <x-audio.icons.rewind class="w-auto h-30" />
       </button>
-      <button data-play class="w-30 h-30 flex items-center justify-center">
+      <button data-play title="{{ __('Abspielen/Pause') }}" class="w-30 h-30 flex items-center justify-center">
         <x-audio.icons.play />
         <x-audio.icons.pause class="hidden" />
       </button>
-      <button data-forward>
+      <button data-forward title="{{ __('Vor') }}">
         <x-audio.icons.forward class="w-auto h-30" />
       </button>
     </div>
