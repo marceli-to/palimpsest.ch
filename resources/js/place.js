@@ -70,10 +70,30 @@ const Places = (function() {
         return;
       }
       const script = document.createElement('script');
-      script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js';
-      script.async = true;
+      script.src = 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js';
+      script.defer = true;
       script.onload = resolve;
       script.onerror = reject;
+      
+      // Add preload hint
+      const preload = document.createElement('link');
+      preload.rel = 'preload';
+      preload.as = 'script';
+      preload.href = script.src;
+      document.head.appendChild(preload);
+
+      // Add CSS with preload
+      const cssPreload = document.createElement('link');
+      cssPreload.rel = 'preload';
+      cssPreload.as = 'style';
+      cssPreload.href = 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css';
+      document.head.appendChild(cssPreload);
+
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = cssPreload.href;
+      document.head.appendChild(css);
+
       document.head.appendChild(script);
     });
   }
