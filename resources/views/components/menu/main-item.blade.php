@@ -24,8 +24,8 @@ use App\Models\Place;
           <a 
             href="{{ localized_route('page.place', $place->slug) }}" 
             title="{{ __($place->name) }}"
-            class="block hover:text-coral transition-colors text-lg lg:text-4xl">
-            {{ __($place->name) }}
+            class="flex justify-start items-end hover:text-coral transition-colors text-lg lg:text-4xl">
+            {{ __($place->name) }}<span class="block ml-4 mb-2 lg:mb-6 text-xs lg:text-xl">({{ __($place->language) }})</span>
           </a>
         </li>
       @endforeach

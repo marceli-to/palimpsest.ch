@@ -7,6 +7,7 @@ class Place extends Model
   protected $fillable = [
     'slug', 
     'name',
+    'language',
     'position',
     'published'
   ];

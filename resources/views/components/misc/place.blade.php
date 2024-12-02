@@ -6,11 +6,6 @@ $place = Place::with('locations.facts')->where('slug', $slug)->published()->firs
 <header class="bg-royal text-white">
   <x-layout.inner class="flex items-center justify-between leading-none h-60 lg:h-92">
     <h2 class="text-2xl lg:text-4xl !mb-0">{{ $place->name }}</h2>
-    <a 
-      href="javascript:;" 
-      x-on:click="show_menu = true; {{ !Request::routeIs('*.page.place') ? 'is_pages = false' : '' }}; $event.target.closest('html').classList.toggle('has_menu');">
-      <x-icons.cross class="w-26 lg:w-40 h-auto" />
-    </a>
   </x-layout.inner>
 </header>
 <x-layout.inner class="!px-0">
